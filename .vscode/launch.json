@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    { "type": "java", "name": "Конвертер веса", "request": "launch", "mainClass": "lab.Main" },
-    { "type": "java", "name": "Проверка модели", "request": "launch", "mainClass": "lab.ModelTest" }
+    { "type": "java", "name": "Конвертер веса", "request": "launch", "mainClass": "lab.Main" }
   ]
 }

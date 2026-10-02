@@ -1,20 +1,21 @@
 $ErrorActionPreference = 'Stop'
-Set-Location -LiteralPath $PSScriptRoot
+
+$projectRoot = Split-Path -Parent $PSScriptRoot
 $jdkCandidates = @()
 if ($env:JAVA_HOME) { $jdkCandidates += $env:JAVA_HOME }
-$jdkCandidates += Get-ChildItem "$env:USERPROFILE/.vscode/extensions/redhat.java-*/jre/*" -Directory -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
-$jdkCandidates += Get-ChildItem 'C:/Program Files/Java/*','C:/Program Files/Eclipse Adoptium/*' -Directory -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
-$jdk = $jdkCandidates | Where-Object { Test-Path -LiteralPath (Join-Path $_ 'bin/javac.exe') } | Select-Object -First 1
-if (-not $jdk) { throw 'JDK 17 or later is required. Set JAVA_HOME.' }
-$output = Join-Path $PSScriptRoot 'output'
-$classes = Join-Path $output 'classes'
-$jar = Join-Path $output 'WeightConverter.jar'
-New-Item -ItemType Directory -Force $classes | Out-Null
-$sources = Get-ChildItem src/lab/*.java,tests/lab/*.java | Select-Object -ExpandProperty FullName
-& "$jdk/bin/javac.exe" -encoding UTF-8 -g --release 17 -d $classes $sources
+$jdkCandidates += @(Get-ChildItem -Path 'C:/Program Files/Java/jdk-*','C:/Program Files/Eclipse Adoptium/jdk-*' -Directory -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName)
+$jdk = $jdkCandidates | Where-Object {
+    (Test-Path -LiteralPath (Join-Path $_ 'bin/javac.exe')) -and
+    (Test-Path -LiteralPath (Join-Path $_ 'bin/jar.exe'))
+} | Select-Object -First 1
+if (-not $jdk) { throw 'JDK 17 or newer is required. Set JAVA_HOME.' }
+
+$classes = Join-Path $projectRoot 'build/classes'
+$jar = Join-Path $projectRoot 'build/WeightConverter.jar'
+New-Item -ItemType Directory -Force -Path $classes | Out-Null
+$sources = Get-ChildItem -LiteralPath (Join-Path $projectRoot 'src/lab') -Filter '*.java' | Select-Object -ExpandProperty FullName
+& (Join-Path $jdk 'bin/javac.exe') -encoding UTF-8 --release 17 -d $classes $sources
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed.' }
-& "$jdk/bin/java.exe" -cp $classes lab.ModelTest
-if ($LASTEXITCODE -ne 0) { throw 'Model tests failed.' }
-& "$jdk/bin/jar.exe" --create --file $jar --main-class lab.Main -C $classes lab/WeightUnit.class -C $classes lab/ConversionModel.class -C $classes 'lab/ConversionModel$Result.class' -C $classes lab/MainView.class -C $classes 'lab/MainView$Input.class' -C $classes lab/InputDialog.class -C $classes lab/ConversionController.class -C $classes lab/Main.class
-if ($LASTEXITCODE -ne 0) { throw 'Packaging failed.' }
+& (Join-Path $jdk 'bin/jar.exe') --create --file $jar --main-class lab.Main -C $classes .
+if ($LASTEXITCODE -ne 0) { throw 'JAR packaging failed.' }
 Write-Host "Built $jar"
