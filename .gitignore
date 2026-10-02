@@ -1,0 +1,11 @@
+/build/
+/output/
+/out/
+/.vscode/output/
+*.class
+*.log
+*.tmp
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
