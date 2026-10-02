@@ -1,0 +1,11 @@
+**/build/
+**/out/
+**/output/
+*.class
+*.jar
+*.log
+*.tmp
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
