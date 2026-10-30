@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="704px" preserveAspectRatio="none" style="width:1200px;height:704px;background:#FFFFFF;" version="1.1" viewBox="0 0 1200 704" width="1200px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:2c81786f-f0db-43ac-b486-a87db187e6d4" target="_top" title="psysml:2c81786f-f0db-43ac-b486-a87db187e6d4" xlink:actuate="onRequest" xlink:href="psysml:2c81786f-f0db-43ac-b486-a87db187e6d4" xlink:show="new" xlink:title="psysml:2c81786f-f0db-43ac-b486-a87db187e6d4" xlink:type="simple"><rect fill="#FFFFFF" height="691.13" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="1186" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="500.5" y="26.5332">&lt;editor&gt; Редактор чека: Экран</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="1193" y1="34.6094" y2="34.6094"/></a></g><!--MD5=[e4f7fae6ed58524ba242bb0b0d3be6b7]
+cluster E2--><g id="cluster_E2"><a href="psysml:0309c8d2-5eea-41f4-b84a-ce47092759d0" target="_top" title="psysml:0309c8d2-5eea-41f4-b84a-ce47092759d0" xlink:actuate="onRequest" xlink:href="psysml:0309c8d2-5eea-41f4-b84a-ce47092759d0" xlink:show="new" xlink:title="psysml:0309c8d2-5eea-41f4-b84a-ce47092759d0" xlink:type="simple"><rect fill="#FFFFFF" height="509.13" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="453" x="39" y="59"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="149.5" y="78.5332">&lt;fields&gt; Реквизиты покупки: Группа</text><line style="stroke:#383838;stroke-width:1.0;" x1="39" x2="492" y1="86.6094" y2="86.6094"/></a></g><!--MD5=[de5ec2e2e8f62f467e546659f5068c88]
+cluster E5--><g id="cluster_E5"><a href="psysml:bc366d84-7ea7-4fb6-a4e3-54331df6e330" target="_top" title="psysml:bc366d84-7ea7-4fb6-a4e3-54331df6e330" xlink:actuate="onRequest" xlink:href="psysml:bc366d84-7ea7-4fb6-a4e3-54331df6e330" xlink:show="new" xlink:title="psysml:bc366d84-7ea7-4fb6-a4e3-54331df6e330" xlink:type="simple"><rect fill="#FFFFFF" height="147.36" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="365" x="79" y="380.77"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="173" y="400.3032">&lt;currency&gt; Валюта: Выбор</text><line style="stroke:#383838;stroke-width:1.0;" x1="79" x2="444" y1="408.3794" y2="408.3794"/></a></g><!--MD5=[55dfccfc6c49c2d10cd1bd2211a6c90c]
+cluster E8--><g id="cluster_E8"><a href="psysml:7b3f4c99-548c-47b8-8324-caa3e5c40d2e" target="_top" title="psysml:7b3f4c99-548c-47b8-8324-caa3e5c40d2e" xlink:actuate="onRequest" xlink:href="psysml:7b3f4c99-548c-47b8-8324-caa3e5c40d2e" xlink:show="new" xlink:title="psysml:7b3f4c99-548c-47b8-8324-caa3e5c40d2e" xlink:type="simple"><rect fill="#FFFFFF" height="164.96" id="E8" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="355" x="532" y="371.97"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="622" y="391.5032">&lt;items&gt; Позиции: Таблица</text><line style="stroke:#383838;stroke-width:1.0;" x1="532" x2="887" y1="399.5794" y2="399.5794"/></a></g><!--MD5=[03104f77b71e2d8d3500c651e6e31181]
+cluster E13--><g id="cluster_E13"><a href="psysml:4510f70a-fd88-474a-b947-6a257de40d9c" target="_top" title="psysml:4510f70a-fd88-474a-b947-6a257de40d9c" xlink:actuate="onRequest" xlink:href="psysml:4510f70a-fd88-474a-b947-6a257de40d9c" xlink:show="new" xlink:title="psysml:4510f70a-fd88-474a-b947-6a257de40d9c" xlink:type="simple"><rect fill="#FFFFFF" height="164.97" id="E13" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="347" x="814" y="167"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="259" x="858" y="186.5332">&lt;buttons&gt; Действия редактора: Панель</text><line style="stroke:#383838;stroke-width:1.0;" x1="814" x2="1161" y1="194.6094" y2="194.6094"/></a></g><g><a href="psysml:a7f03272-fc3a-4e7f-9885-21ec00400fd7" target="_top" title="psysml:a7f03272-fc3a-4e7f-9885-21ec00400fd7" xlink:actuate="onRequest" xlink:href="psysml:a7f03272-fc3a-4e7f-9885-21ec00400fd7" xlink:show="new" xlink:title="psysml:a7f03272-fc3a-4e7f-9885-21ec00400fd7" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E3" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="199" x="249.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="255" y="122.5332">&lt;shop&gt; Магазин: Поле ввода</text></a></g><g><a href="psysml:8333f4db-c7d4-4785-96da-65dc4e105ae7" target="_top" title="psysml:8333f4db-c7d4-4785-96da-65dc4e105ae7" xlink:actuate="onRequest" xlink:href="psysml:8333f4db-c7d4-4785-96da-65dc4e105ae7" xlink:show="new" xlink:title="psysml:8333f4db-c7d4-4785-96da-65dc4e105ae7" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E4" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="186" x="265" y="239.49"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="270.5" y="259.0232">&lt;date&gt; Дата покупки: Дата</text></a></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><a href="psysml:29a2ec47-8528-4f54-ae1b-f39a5f05b819" target="_top" title="psysml:29a2ec47-8528-4f54-ae1b-f39a5f05b819" xlink:actuate="onRequest" xlink:href="psysml:29a2ec47-8528-4f54-ae1b-f39a5f05b819" xlink:show="new" xlink:title="psysml:29a2ec47-8528-4f54-ae1b-f39a5f05b819" xlink:type="simple"><g id="elem_E6"><rect fill="#FFFFFF" height="79.3563" id="E6" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="297" x="103.5" y="424.77"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="222.5" y="442.227">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="216" y="459.397">варианты</text><line style="stroke:#181818;stroke-width:0.5;" x1="104.5" x2="399.5" y1="467.4731" y2="467.4731"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="109.5" y="497.0501">= ("BYN", "RUB", "EUR", "USD", "KZT", "PLN")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="232" y="480.7016">values</text></g></a><g><a href="psysml:7631a22d-2c50-43bb-af39-c67889ade927" target="_top" title="psysml:7631a22d-2c50-43bb-af39-c67889ade927" xlink:actuate="onRequest" xlink:href="psysml:7631a22d-2c50-43bb-af39-c67889ade927" xlink:show="new" xlink:title="psysml:7631a22d-2c50-43bb-af39-c67889ade927" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E7" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="273" x="516.5" y="239.49"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="522" y="259.0232">&lt;text&gt; Исходный текст чека: Поле ввода</text></a></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><a href="psysml:c6d31267-5b81-432e-9a9e-82b183fc40d7" target="_top" title="psysml:c6d31267-5b81-432e-9a9e-82b183fc40d7" xlink:actuate="onRequest" xlink:href="psysml:c6d31267-5b81-432e-9a9e-82b183fc40d7" xlink:show="new" xlink:title="psysml:c6d31267-5b81-432e-9a9e-82b183fc40d7" xlink:type="simple"><g id="elem_E9"><rect fill="#FFFFFF" height="96.9656" id="E9" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="288" x="556" y="415.97"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="670.5" y="433.427">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="667.5" y="450.597">столбцы</text><line style="stroke:#181818;stroke-width:0.5;" x1="557" x2="843" y1="458.6731" y2="458.6731"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="272" x="562" y="488.2501">= ("товар", "количество", "цена", "сумма",</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="562" y="505.8595">"категория")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="680" y="471.9016">values</text></g></a><g><a href="psysml:bf8c91d6-9f39-44bf-b477-7cdb1162d86f" target="_top" title="psysml:bf8c91d6-9f39-44bf-b477-7cdb1162d86f" xlink:actuate="onRequest" xlink:href="psysml:bf8c91d6-9f39-44bf-b477-7cdb1162d86f" xlink:show="new" xlink:title="psysml:bf8c91d6-9f39-44bf-b477-7cdb1162d86f" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E10" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="204" x="777" y="592.13"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="782.5" y="611.6632">&lt;total&gt; Итог чека: Поле ввода</text></a></g><g><a href="psysml:e280a3f7-d447-4312-8d3b-d77ffbf61bac" target="_top" title="psysml:e280a3f7-d447-4312-8d3b-d77ffbf61bac" xlink:actuate="onRequest" xlink:href="psysml:e280a3f7-d447-4312-8d3b-d77ffbf61bac" xlink:show="new" xlink:title="psysml:e280a3f7-d447-4312-8d3b-d77ffbf61bac" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E11" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="247" x="755.5" y="642.13"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="761" y="661.6632">&lt;card&gt; Карта или Без карты: Выбор</text></a></g><g><a href="psysml:4f9495d5-76c8-4e54-b5ff-517051ef5824" target="_top" title="psysml:4f9495d5-76c8-4e54-b5ff-517051ef5824" xlink:actuate="onRequest" xlink:href="psysml:4f9495d5-76c8-4e54-b5ff-517051ef5824" xlink:show="new" xlink:title="psysml:4f9495d5-76c8-4e54-b5ff-517051ef5824" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E12" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="376" x="801" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="365" x="806.5" y="122.5332">&lt;status&gt; Результат анализа и расхождения: Индикатор</text></a></g><!--MD5=[bee11217b2f71d958a27249dc326068c]
+class E14--><a href="psysml:4eaed522-de5b-42d5-973e-72917b854d7d" target="_top" title="psysml:4eaed522-de5b-42d5-973e-72917b854d7d" xlink:actuate="onRequest" xlink:href="psysml:4eaed522-de5b-42d5-973e-72917b854d7d" xlink:show="new" xlink:title="psysml:4eaed522-de5b-42d5-973e-72917b854d7d" xlink:type="simple"><g id="elem_E14"><rect fill="#FFFFFF" height="96.9656" id="E14" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="279" x="838.5" y="211"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="948.5" y="228.457">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="943.5" y="245.627">действия</text><line style="stroke:#181818;stroke-width:0.5;" x1="839.5" x2="1116.5" y1="253.7031" y2="253.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="844.5" y="283.2801">= ("Распознать повторно", "Сохранить",</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="844.5" y="300.8895">"Назад")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="958" y="266.9316">values</text></g></a><!--MD5=[af87c684e3b0d8be13c1a698a818ef1e]
+link E3 to E4--><g id="link_E3_E4"><a href="psysml:b22122d5-7291-4ead-bfb4-24b6cc7bcd78" target="_top" title="psysml:b22122d5-7291-4ead-bfb4-24b6cc7bcd78" xlink:actuate="onRequest" xlink:href="psysml:b22122d5-7291-4ead-bfb4-24b6cc7bcd78" xlink:show="new" xlink:title="psysml:b22122d5-7291-4ead-bfb4-24b6cc7bcd78" xlink:type="simple"><path d="M350.29,143.27 C352,168.84 355,213.71 356.71,239.25 " fill="none" id="E3-E4" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[1b7591eae5389033d8d09a9d6721a717]
+link E4 to E5--><g id="link_E4_E5"><a href="psysml:a130d8f7-c2e0-4751-8633-f1ca04b682b6" target="_top" title="psysml:a130d8f7-c2e0-4751-8633-f1ca04b682b6" xlink:actuate="onRequest" xlink:href="psysml:a130d8f7-c2e0-4751-8633-f1ca04b682b6" xlink:show="new" xlink:title="psysml:a130d8f7-c2e0-4751-8633-f1ca04b682b6" xlink:type="simple"><path d="M373.02,279.81 C386.63,298.32 406.17,327.56 417,355.97 C419.1263,361.5475 421.0169,367.3797 422.6977,373.3195 C423.1179,374.8044 423.525,376.2961 423.9193,377.7921 C424.1165,378.5402 424.3105,379.2893 424.5014,380.0393 C424.5491,380.2268 424.5967,380.4144 424.644,380.6019 " fill="none" id="E4-E5" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[e3d2a08a9c9236652057e8ed0cbc9b62]
+link E2 to E7--><g id="link_E2_E7"><a href="psysml:2db22131-659f-413f-b979-14b116bff180" target="_top" title="psysml:2db22131-659f-413f-b979-14b116bff180" xlink:actuate="onRequest" xlink:href="psysml:2db22131-659f-413f-b979-14b116bff180" xlink:show="new" xlink:title="psysml:2db22131-659f-413f-b979-14b116bff180" xlink:type="simple"><path d="M492.2992,149.1975 C492.7933,149.8772 493.2928,150.554 493.7975,151.2277 C495.8162,153.9228 497.918,156.5701 500.0933,159.1695 C504.444,164.3682 509.0889,169.3748 513.9522,174.1864 C523.6787,183.8097 534.2788,192.6531 545.145,200.6938 C566.8775,216.775 589.675,229.645 608.68,239.12 " fill="none" id="E2-E7" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[79bc8f324ef4d02c541433f2e6e513c3]
+link E7 to E8--><g id="link_E7_E8"><a href="psysml:e2979b4c-04ed-4006-a62f-87fdcbed7abb" target="_top" title="psysml:e2979b4c-04ed-4006-a62f-87fdcbed7abb" xlink:actuate="onRequest" xlink:href="psysml:e2979b4c-04ed-4006-a62f-87fdcbed7abb" xlink:show="new" xlink:title="psysml:e2979b4c-04ed-4006-a62f-87fdcbed7abb" xlink:type="simple"><path d="M684.23,279.94 C717.3,299.73 771.59,329.99 822,347.97 C838.26,353.77 848,343.57 860,355.97 C864.1513,360.2587 867.5686,365.1194 870.3698,370.3462 C870.5449,370.6729 870.7175,371.001 870.8878,371.3305 C870.973,371.4952 871.0575,371.6603 871.1415,371.8257 " fill="none" id="E7-E8" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[de116e21047ded6283635ff91c92fb70]
+link E8 to E10--><g id="link_E8_E10"><a href="psysml:c870f194-8e6a-49e6-895e-90800e0e0755" target="_top" title="psysml:c870f194-8e6a-49e6-895e-90800e0e0755" xlink:actuate="onRequest" xlink:href="psysml:c870f194-8e6a-49e6-895e-90800e0e0755" xlink:show="new" xlink:title="psysml:c870f194-8e6a-49e6-895e-90800e0e0755" xlink:type="simple"><path d="M879,537.5731 C879,537.788 879,538.003 879,538.218 C879,539.0779 879,539.9379 879,540.7974 C879,542.5163 879,544.2334 879,545.9448 C879,549.3676 879,552.7676 879,556.1141 C879,569.5 879,582.03 879,591.74 " fill="none" id="E8-E10" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[7e01d6273c142173bd6ca4b66f8f251a]
+link E10 to E11--><g id="link_E10_E11"><a href="psysml:627ea236-d818-429d-8370-2802a98cd2b6" target="_top" title="psysml:627ea236-d818-429d-8370-2802a98cd2b6" xlink:actuate="onRequest" xlink:href="psysml:627ea236-d818-429d-8370-2802a98cd2b6" xlink:show="new" xlink:title="psysml:627ea236-d818-429d-8370-2802a98cd2b6" xlink:type="simple"><path d="M879,632.38 C879,635.51 879,638.75 879,641.88 " fill="none" id="E10-E11" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[e2a9ac97dcd3257bb5342dae06547bad]
+link E12 to E13--><g id="link_E12_E13"><a href="psysml:9a148439-6f18-4966-b79c-5a18e8f92702" target="_top" title="psysml:9a148439-6f18-4966-b79c-5a18e8f92702" xlink:actuate="onRequest" xlink:href="psysml:9a148439-6f18-4966-b79c-5a18e8f92702" xlink:show="new" xlink:title="psysml:9a148439-6f18-4966-b79c-5a18e8f92702" xlink:type="simple"><path d="M1121.92,143.49 C1127.1,145.73 1131.25,148.23 1134,151 C1138.2013,155.24 1141.6563,160.0639 1144.485,165.2638 C1144.6618,165.5888 1144.8362,165.9153 1145.0081,166.2432 C1145.0941,166.4071 1145.1795,166.5714 1145.2642,166.736 " fill="none" id="E12-E13" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[4b91d424b57ea1b6fdc777ee301540f0]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+top to bottom direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<editor> Редактор чека: Экран" as E1 [[psysml:2c81786f-f0db-43ac-b486-a87db187e6d4 ]] {
+
+rec usage "<fields> Реквизиты покупки: Группа" as E2 [[psysml:0309c8d2-5eea-41f4-b84a-ce47092759d0 ]] {
+
+rec usage "<shop> Магазин: Поле ввода" as E3 [[psysml:a7f03272-fc3a-4e7f-9885-21ec00400fd7 ]] {
+
+}
+
+rec usage "<date> Дата покупки: Дата" as E4 [[psysml:8333f4db-c7d4-4785-96da-65dc4e105ae7 ]] {
+
+}
+
+rec usage "<currency> Валюта: Выбор" as E5 [[psysml:bc366d84-7ea7-4fb6-a4e3-54331df6e330 ]] {
+
+comp usage "варианты  " as E6  <<(T,blue) attribute>> [[psysml:29a2ec47-8528-4f54-ae1b-f39a5f05b819 ]] {
+
+##//values//##
+
+ <U+003D> ("BYN", "RUB", "EUR", "USD", "KZT", "PLN")
+
+}
+
+}
+
+}
+
+rec usage "<text> Исходный текст чека: Поле ввода" as E7 [[psysml:7631a22d-2c50-43bb-af39-c67889ade927 ]] {
+
+}
+
+rec usage "<items> Позиции: Таблица" as E8 [[psysml:7b3f4c99-548c-47b8-8324-caa3e5c40d2e ]] {
+
+comp usage "столбцы  " as E9  <<(T,blue) attribute>> [[psysml:c6d31267-5b81-432e-9a9e-82b183fc40d7 ]] {
+
+##//values//##
+
+ <U+003D> ("товар", "количество", "цена", "сумма", "категория")
+
+}
+
+}
+
+rec usage "<total> Итог чека: Поле ввода" as E10 [[psysml:bf8c91d6-9f39-44bf-b477-7cdb1162d86f ]] {
+
+}
+
+rec usage "<card> Карта или Без карты: Выбор" as E11 [[psysml:e280a3f7-d447-4312-8d3b-d77ffbf61bac ]] {
+
+}
+
+rec usage "<status> Результат анализа и расхождения: Индикатор" as E12 [[psysml:4f9495d5-76c8-4e54-b5ff-517051ef5824 ]] {
+
+}
+
+rec usage "<buttons> Действия редактора: Панель" as E13 [[psysml:4510f70a-fd88-474a-b947-6a257de40d9c ]] {
+
+comp usage "действия  " as E14  <<(T,blue) attribute>> [[psysml:4eaed522-de5b-42d5-973e-72917b854d7d ]] {
+
+##//values//##
+
+ <U+003D> ("Распознать повторно", "Сохранить", "Назад")
+
+}
+
+}
+
+}
+
+E3 -[thickness=3]- E4 [[psysml:b22122d5-7291-4ead-bfb4-24b6cc7bcd78 ]]
+
+E4 -[thickness=3]- E5 [[psysml:a130d8f7-c2e0-4751-8633-f1ca04b682b6 ]]
+
+E2 -[thickness=3]- E7 [[psysml:2db22131-659f-413f-b979-14b116bff180 ]]
+
+E7 -[thickness=3]- E8 [[psysml:e2979b4c-04ed-4006-a62f-87fdcbed7abb ]]
+
+E8 -[thickness=3]- E10 [[psysml:c870f194-8e6a-49e6-895e-90800e0e0755 ]]
+
+E10 -[thickness=3]- E11 [[psysml:627ea236-d818-429d-8370-2802a98cd2b6 ]]
+
+E12 -[thickness=3]- E13 [[psysml:9a148439-6f18-4966-b79c-5a18e8f92702 ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

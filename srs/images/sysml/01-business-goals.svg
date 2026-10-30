@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="638px" preserveAspectRatio="none" style="width:558px;height:638px;background:#FFFFFF;" version="1.1" viewBox="0 0 558 638" width="558px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><a href="psysml:97ab7dd0-58f2-4bc3-925b-152ab0238cd3" target="_top" title="psysml:97ab7dd0-58f2-4bc3-925b-152ab0238cd3" xlink:actuate="onRequest" xlink:href="psysml:97ab7dd0-58f2-4bc3-925b-152ab0238cd3" xlink:show="new" xlink:title="psysml:97ab7dd0-58f2-4bc3-925b-152ab0238cd3" xlink:type="simple"><g id="elem_E1"><rect fill="#FFFFFF" height="50.7031" id="E1" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="176" x="7" y="294.14"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="54.5" y="311.597">«requirement»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="10" y="328.767">&lt;BG&gt; Бизнес-цели Cheq</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="182" y1="336.8431" y2="336.8431"/></g></a><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><a href="psysml:a3bc2ab7-74bb-4d21-82db-2fdf691b6c26" target="_top" title="psysml:a3bc2ab7-74bb-4d21-82db-2fdf691b6c26" xlink:actuate="onRequest" xlink:href="psysml:a3bc2ab7-74bb-4d21-82db-2fdf691b6c26" xlink:show="new" xlink:title="psysml:a3bc2ab7-74bb-4d21-82db-2fdf691b6c26" xlink:type="simple"><g id="elem_E2"><rect fill="#FFFFFF" height="96.9656" id="E2" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="283" x="255.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="356.5" y="24.457">«requirement»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="258.5" y="41.627">&lt;BG1&gt; BG-01 Меньше ручного переноса</text><line style="stroke:#181818;stroke-width:0.5;" x1="256.5" x2="537.5" y1="49.7031" y2="49.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="251" x="261.5" y="79.2801">Сократить перенос покупок из фото в</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="261.5" y="96.8895">личный архив.</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="23" x="385.5" y="62.9316">doc</text></g></a><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><a href="psysml:e75af3d0-0c12-4e0f-a6bc-3bc575972254" target="_top" title="psysml:e75af3d0-0c12-4e0f-a6bc-3bc575972254" xlink:actuate="onRequest" xlink:href="psysml:e75af3d0-0c12-4e0f-a6bc-3bc575972254" xlink:show="new" xlink:title="psysml:e75af3d0-0c12-4e0f-a6bc-3bc575972254" xlink:type="simple"><g id="elem_E3"><rect fill="#FFFFFF" height="96.9656" id="E3" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="302" x="246" y="139"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="356.5" y="156.457">«requirement»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="257" x="264.5" y="173.627">&lt;BG2&gt; BG-02 Доступный архив и цены</text><line style="stroke:#181818;stroke-width:0.5;" x1="247" x2="547" y1="181.7031" y2="181.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="286" x="252" y="211.2801">Находить чеки и товары, сравнивать цены,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="252" y="228.8895">делиться выбранным.</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="23" x="385.5" y="194.9316">doc</text></g></a><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><a href="psysml:a540a8ad-7b1d-4bb3-a4ae-abe1e09bc647" target="_top" title="psysml:a540a8ad-7b1d-4bb3-a4ae-abe1e09bc647" xlink:actuate="onRequest" xlink:href="psysml:a540a8ad-7b1d-4bb3-a4ae-abe1e09bc647" xlink:show="new" xlink:title="psysml:a540a8ad-7b1d-4bb3-a4ae-abe1e09bc647" xlink:type="simple"><g id="elem_E4"><rect fill="#FFFFFF" height="96.9656" id="E4" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="299" x="247.5" y="271"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="356.5" y="288.457">«requirement»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="250.5" y="305.627">&lt;BG3&gt; BG-03 Понятные расходы и бюджет</text><line style="stroke:#181818;stroke-width:0.5;" x1="248.5" x2="545.5" y1="313.7031" y2="313.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="253.5" y="343.2801">Показывать месячную сумму и остаток с</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="253.5" y="360.8895">учётом исторических курсов.</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="23" x="385.5" y="326.9316">doc</text></g></a><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><a href="psysml:b0e244fc-0348-4170-967b-aa3c58cd02b8" target="_top" title="psysml:b0e244fc-0348-4170-967b-aa3c58cd02b8" xlink:actuate="onRequest" xlink:href="psysml:b0e244fc-0348-4170-967b-aa3c58cd02b8" xlink:show="new" xlink:title="psysml:b0e244fc-0348-4170-967b-aa3c58cd02b8" xlink:type="simple"><g id="elem_E5"><rect fill="#FFFFFF" height="96.9656" id="E5" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="308" x="243" y="403"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="356.5" y="420.457">«requirement»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="246" y="437.627">&lt;BG4&gt; BG-04 Сохранность и достоверность</text><line style="stroke:#181818;stroke-width:0.5;" x1="244" x2="550" y1="445.7031" y2="445.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="249" y="475.2801">Не терять импорт и подтверждённые</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="257" x="249" y="492.8895">данные, исключать повторную запись.</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="23" x="385.5" y="458.9316">doc</text></g></a><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><a href="psysml:4abd97bb-b829-4828-8c95-900a6c7ce693" target="_top" title="psysml:4abd97bb-b829-4828-8c95-900a6c7ce693" xlink:actuate="onRequest" xlink:href="psysml:4abd97bb-b829-4828-8c95-900a6c7ce693" xlink:show="new" xlink:title="psysml:4abd97bb-b829-4828-8c95-900a6c7ce693" xlink:type="simple"><g id="elem_E6"><rect fill="#FFFFFF" height="96.9656" id="E6" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="282" x="256" y="535"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="81" x="356.5" y="552.457">«requirement»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="259" y="569.627">&lt;BG5&gt; BG-05 Контроль данных и затрат</text><line style="stroke:#181818;stroke-width:0.5;" x1="257" x2="537" y1="577.7031" y2="577.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="262" y="607.2801">Сохранять ручной учёт без облака,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="262" y="624.8895">ограничивать передачу данных.</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="23" x="385.5" y="590.9316">doc</text></g></a><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><a href="psysml:1175ea6f-711d-432c-9f1f-a85f62789acd" target="_top" title="psysml:1175ea6f-711d-432c-9f1f-a85f62789acd" xlink:actuate="onRequest" xlink:href="psysml:1175ea6f-711d-432c-9f1f-a85f62789acd" xlink:show="new" xlink:title="psysml:1175ea6f-711d-432c-9f1f-a85f62789acd" xlink:type="simple"><path d="M116.13,281.3 C140.86,237.55 186.57,166.16 243,121.49 C250.82,115.29 259.32,109.57 268.16,104.3 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="109.87,292.6,116.2766,289.2901,115.6854,282.1033,109.2788,285.4132,109.87,292.6" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[5d7b3810b1dd9b5164bea1151b29b665]
+reverse link E1 to E3--><g id="link_E1_E3"><a href="psysml:65a7d8b5-4814-4f16-82fc-f6f92bcf7157" target="_top" title="psysml:65a7d8b5-4814-4f16-82fc-f6f92bcf7157" xlink:actuate="onRequest" xlink:href="psysml:65a7d8b5-4814-4f16-82fc-f6f92bcf7157" xlink:show="new" xlink:title="psysml:65a7d8b5-4814-4f16-82fc-f6f92bcf7157" xlink:type="simple"><path d="M165.97,287.82 C190.32,276.87 217.83,264.57 243,253.49 C255.71,247.89 269.03,242.08 282.29,236.32 " fill="none" id="E1-backto-E3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="154.19,293.13,161.3036,294.3119,165.1306,288.2001,158.017,287.0182,154.19,293.13" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[f2c5c03aa1e8c0ba21c10a05e6444b8e]
+reverse link E1 to E4--><g id="link_E1_E4"><a href="psysml:a675bc9e-4048-4f90-83b2-feef43a70e2f" target="_top" title="psysml:a675bc9e-4048-4f90-83b2-feef43a70e2f" xlink:actuate="onRequest" xlink:href="psysml:a675bc9e-4048-4f90-83b2-feef43a70e2f" xlink:show="new" xlink:title="psysml:a675bc9e-4048-4f90-83b2-feef43a70e2f" xlink:type="simple"><path d="M197.56,319.49 C213.51,319.49 230.27,319.49 247.01,319.49 " fill="none" id="E1-backto-E4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="184.69,319.49,190.69,323.49,196.69,319.49,190.69,315.49,184.69,319.49" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[33238bef88d6431a141d8bc8fb12bca0]
+reverse link E1 to E5--><g id="link_E1_E5"><a href="psysml:039c5699-0f38-4fef-9464-5eaecfb1e36a" target="_top" title="psysml:039c5699-0f38-4fef-9464-5eaecfb1e36a" xlink:actuate="onRequest" xlink:href="psysml:039c5699-0f38-4fef-9464-5eaecfb1e36a" xlink:show="new" xlink:title="psysml:039c5699-0f38-4fef-9464-5eaecfb1e36a" xlink:type="simple"><path d="M165.97,351.16 C190.32,362.11 217.83,374.41 243,385.49 C255.71,391.08 269.03,396.9 282.29,402.66 " fill="none" id="E1-backto-E5" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="154.19,345.85,158.017,351.9618,165.1306,350.7799,161.3036,344.6681,154.19,345.85" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[aca2ef284c2b1b90e17e73bf3f292c07]
+reverse link E1 to E6--><g id="link_E1_E6"><a href="psysml:896b6eac-886b-41e3-a0be-4b4c57270407" target="_top" title="psysml:896b6eac-886b-41e3-a0be-4b4c57270407" xlink:actuate="onRequest" xlink:href="psysml:896b6eac-886b-41e3-a0be-4b4c57270407" xlink:show="new" xlink:title="psysml:896b6eac-886b-41e3-a0be-4b4c57270407" xlink:type="simple"><path d="M116.13,357.68 C140.86,401.43 186.57,472.81 243,517.49 C250.82,523.68 259.32,529.41 268.16,534.67 " fill="none" id="E1-backto-E6" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="109.87,346.37,109.2788,353.5568,115.6854,356.8667,116.2766,349.6799,109.87,346.37" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[a3471fcf6a3d03165aae8f617a08985c]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+left to right direction
+
+
+
+comp usage "~<BG> Бизнес-цели Cheq  " as E1  <<(T,blue) requirement>> [[psysml:97ab7dd0-58f2-4bc3-925b-152ab0238cd3 ]] {
+
+}
+
+comp usage "~<BG1> BG-01 Меньше ручного переноса  " as E2  <<(T,blue) requirement>> [[psysml:a3bc2ab7-74bb-4d21-82db-2fdf691b6c26 ]] {
+
+##//doc//##
+
+Сократить перенос покупок из фото в личный архив.
+
+}
+
+comp usage "~<BG2> BG-02 Доступный архив и цены  " as E3  <<(T,blue) requirement>> [[psysml:e75af3d0-0c12-4e0f-a6bc-3bc575972254 ]] {
+
+##//doc//##
+
+Находить чеки и товары, сравнивать цены, делиться выбранным.
+
+}
+
+comp usage "~<BG3> BG-03 Понятные расходы и бюджет  " as E4  <<(T,blue) requirement>> [[psysml:a540a8ad-7b1d-4bb3-a4ae-abe1e09bc647 ]] {
+
+##//doc//##
+
+Показывать месячную сумму и остаток с учётом исторических курсов.
+
+}
+
+comp usage "~<BG4> BG-04 Сохранность и достоверность  " as E5  <<(T,blue) requirement>> [[psysml:b0e244fc-0348-4170-967b-aa3c58cd02b8 ]] {
+
+##//doc//##
+
+Не терять импорт и подтверждённые данные, исключать повторную запись.
+
+}
+
+comp usage "~<BG5> BG-05 Контроль данных и затрат  " as E6  <<(T,blue) requirement>> [[psysml:4abd97bb-b829-4828-8c95-900a6c7ce693 ]] {
+
+##//doc//##
+
+Сохранять ручной учёт без облака, ограничивать передачу данных.
+
+}
+
+E1 *- - E2 [[psysml:1175ea6f-711d-432c-9f1f-a85f62789acd ]]
+
+E1 *- - E3 [[psysml:65a7d8b5-4814-4f16-82fc-f6f92bcf7157 ]]
+
+E1 *- - E4 [[psysml:a675bc9e-4048-4f90-83b2-feef43a70e2f ]]
+
+E1 *- - E5 [[psysml:039c5699-0f38-4fef-9464-5eaecfb1e36a ]]
+
+E1 *- - E6 [[psysml:896b6eac-886b-41e3-a0be-4b4c57270407 ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

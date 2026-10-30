@@ -1,0 +1,67 @@
+01-context.sysml
+Package CheqContext (fa4cad35-a221-46af-bf7d-b18641d78155)
+
+
+02-usecases.sysml
+Package CheqUseCases (3bc46aa5-70c5-4f60-b95b-24c2aadef2a0)
+
+
+03-business-goals.sysml
+Package CheqBusinessGoals (e5d3b308-4be3-4304-94d4-676b3469af6e)
+
+
+04-receipt-states.sysml
+Package CheqReceiptStates (cf7643b8-071d-43ad-afaf-a6dcfe311794)
+
+
+05-receipt-import.sysml
+Package CheqReceiptImport (77dd123b-216b-4973-ac1b-54cd35b83ad0)
+
+
+06-gui.sysml
+Package CheqGuiLib (8273e73b-99a4-4a17-b8ed-73aea8af0586)
+Package CheqGui (4d40b581-101c-41d8-be2b-017ec57f7576)
+Package CheqNavigation (e8362e24-75f0-4635-bbc9-407061afdd54)
+
+
+cheq.sysml
+Package CheqRequirements (3afa155e-295e-4696-bc08-a05545db006a)
+
+
+%viz --view=Tree --style=LR CheqBusinessGoals::BG
+
+
+%viz --view=Interconnection --style=LR CheqContext::context
+
+
+%viz --view=Case --style=LR CheqUseCases::Work
+
+
+%viz --view=State --style=TB CheqReceiptStates::ReceiptState
+
+
+%viz --view=Action --style=TB CheqReceiptImport::ImportReceipt
+
+
+%viz --view=Interconnection --style=TB CheqNavigation::nav
+
+
+%viz --view=Interconnection --style=TB CheqGui::purchases
+
+
+%viz --view=Interconnection --style=TB CheqGui::editor
+
+
+%viz --view=Interconnection --style=TB CheqGui::products
+
+
+%viz --view=Interconnection --style=TB CheqGui::history
+
+
+%viz --view=Interconnection --style=TB CheqGui::expenses
+
+
+%viz --view=Interconnection --style=TB CheqGui::settings
+
+
+%viz --view=Interconnection --style=TB CheqGui::card

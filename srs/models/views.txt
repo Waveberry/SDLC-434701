@@ -1,0 +1,13 @@
+01-business-goals|Tree|CheqBusinessGoals::BG|LR
+02-context|Interconnection|CheqContext::context|LR
+03-usecases|Case|CheqUseCases::Work|LR
+04-receipt-states|State|CheqReceiptStates::ReceiptState|TB
+05-receipt-import|Action|CheqReceiptImport::ImportReceipt|TB
+06-navigation|Interconnection|CheqNavigation::nav|TB
+07-gui-purchases|Interconnection|CheqGui::purchases|TB
+08-gui-editor|Interconnection|CheqGui::editor|TB
+09-gui-products|Interconnection|CheqGui::products|TB
+10-gui-history|Interconnection|CheqGui::history|TB
+11-gui-expenses|Interconnection|CheqGui::expenses|TB
+12-gui-settings|Interconnection|CheqGui::settings|TB
+13-gui-card|Interconnection|CheqGui::card|TB

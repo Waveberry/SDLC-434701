@@ -4,6 +4,7 @@
 *.class
 *.jar
 *.log
+!srs/images/sysml/validation.log
 *.tmp
 .idea/
 *.iml

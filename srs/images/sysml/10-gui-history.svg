@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="497px" preserveAspectRatio="none" style="width:409px;height:497px;background:#FFFFFF;" version="1.1" viewBox="0 0 409 497" width="409px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:1f33790b-16dc-4ea0-8156-bea15870fa8c" target="_top" title="psysml:1f33790b-16dc-4ea0-8156-bea15870fa8c" xlink:actuate="onRequest" xlink:href="psysml:1f33790b-16dc-4ea0-8156-bea15870fa8c" xlink:show="new" xlink:title="psysml:1f33790b-16dc-4ea0-8156-bea15870fa8c" xlink:type="simple"><rect fill="#FFFFFF" height="484.32" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="395" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="251" x="79" y="26.5332">&lt;history&gt; История цен товара: Диалог</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="402" y1="34.6094" y2="34.6094"/></a></g><!--MD5=[d5e69f78d87373223dbae638b30a9c99]
+cluster E3--><g id="cluster_E3"><a href="psysml:7c663b5f-a3b6-426c-b0d3-f3b9c01796a1" target="_top" title="psysml:7c663b5f-a3b6-426c-b0d3-f3b9c01796a1" xlink:actuate="onRequest" xlink:href="psysml:7c663b5f-a3b6-426c-b0d3-f3b9c01796a1" xlink:show="new" xlink:title="psysml:7c663b5f-a3b6-426c-b0d3-f3b9c01796a1" xlink:type="simple"><rect fill="#FFFFFF" height="164.96" id="E3" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="331" x="39" y="107"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="91.5" y="126.5332">&lt;prices&gt; Покупки товара: Таблица</text><line style="stroke:#383838;stroke-width:1.0;" x1="39" x2="370" y1="134.6094" y2="134.6094"/></a></g><!--MD5=[de5ec2e2e8f62f467e546659f5068c88]
+cluster E5--><g id="cluster_E5"><a href="psysml:69e4f11b-9af5-4100-abad-69ff08019eda" target="_top" title="psysml:69e4f11b-9af5-4100-abad-69ff08019eda" xlink:actuate="onRequest" xlink:href="psysml:69e4f11b-9af5-4100-abad-69ff08019eda" xlink:show="new" xlink:title="psysml:69e4f11b-9af5-4100-abad-69ff08019eda" xlink:type="simple"><rect fill="#FFFFFF" height="147.36" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="263" x="107" y="311.96"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="145.5" y="331.4932">&lt;buttons&gt; Действия: Панель</text><line style="stroke:#383838;stroke-width:1.0;" x1="107" x2="370" y1="339.5694" y2="339.5694"/></a></g><g><a href="psysml:af5e5734-121c-48e4-9db0-a5b491da848c" target="_top" title="psysml:af5e5734-121c-48e4-9db0-a5b491da848c" xlink:actuate="onRequest" xlink:href="psysml:af5e5734-121c-48e4-9db0-a5b491da848c" xlink:show="new" xlink:title="psysml:af5e5734-121c-48e4-9db0-a5b491da848c" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="210" x="176" y="43"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="181.5" y="62.5332">&lt;title&gt; Название товара: Текст</text></a></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><a href="psysml:bc4a6c4a-7974-4942-960e-0670daac0454" target="_top" title="psysml:bc4a6c4a-7974-4942-960e-0670daac0454" xlink:actuate="onRequest" xlink:href="psysml:bc4a6c4a-7974-4942-960e-0670daac0454" xlink:show="new" xlink:title="psysml:bc4a6c4a-7974-4942-960e-0670daac0454" xlink:type="simple"><g id="elem_E4"><rect fill="#FFFFFF" height="96.9656" id="E4" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="263" x="63.5" y="151"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="165.5" y="168.457">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="162.5" y="185.627">столбцы</text><line style="stroke:#181818;stroke-width:0.5;" x1="64.5" x2="325.5" y1="193.7031" y2="193.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="69.5" y="223.2801">= ("дата", "магазин", "цена единицы",</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="69.5" y="240.8895">"валюта")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="175" y="206.9316">values</text></g></a><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><a href="psysml:0fb7f238-c9bc-43b5-bedd-7236dae481ca" target="_top" title="psysml:0fb7f238-c9bc-43b5-bedd-7236dae481ca" xlink:actuate="onRequest" xlink:href="psysml:0fb7f238-c9bc-43b5-bedd-7236dae481ca" xlink:show="new" xlink:title="psysml:0fb7f238-c9bc-43b5-bedd-7236dae481ca" xlink:type="simple"><g id="elem_E6"><rect fill="#FFFFFF" height="79.3563" id="E6" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="196" x="131" y="355.96"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="199.5" y="373.417">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="194.5" y="390.587">действия</text><line style="stroke:#181818;stroke-width:0.5;" x1="132" x2="326" y1="398.6631" y2="398.6631"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="137" y="428.2401">= ("Поделиться", "Закрыть")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="209" y="411.8916">values</text></g></a><!--MD5=[2720a5a1f2c3fca2055b230370638851]
+link E2 to E3--><g id="link_E2_E3"><a href="psysml:c2a4bc07-df97-47e9-bff6-53942eb6f560" target="_top" title="psysml:c2a4bc07-df97-47e9-bff6-53942eb6f560" xlink:actuate="onRequest" xlink:href="psysml:c2a4bc07-df97-47e9-bff6-53942eb6f560" xlink:show="new" xlink:title="psysml:c2a4bc07-df97-47e9-bff6-53942eb6f560" xlink:type="simple"><path d="M335.27,83.28 C338.13,85.58 340.75,88.14 343,91 C346.695,95.6875 349.7683,100.8488 352.3169,106.2962 C352.3966,106.4664 352.4757,106.6369 352.5543,106.8077 " fill="none" id="E2-E3" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[0188b64bb0ae78505a997a81836e11e9]
+link E3 to E5--><g id="link_E3_E5"><a href="psysml:0959170e-44cb-40e3-b540-b15c6819eb02" target="_top" title="psysml:0959170e-44cb-40e3-b540-b15c6819eb02" xlink:actuate="onRequest" xlink:href="psysml:0959170e-44cb-40e3-b540-b15c6819eb02" xlink:show="new" xlink:title="psysml:0959170e-44cb-40e3-b540-b15c6819eb02" xlink:type="simple"><path d="M362,272.4984 C362,272.8548 362,273.2116 362,273.5689 C362,274.2835 362,275 362,275.7182 C362,277.1545 362,278.5975 362,280.0459 C362,285.8395 362,291.7192 362,297.5987 C362,300.5385 362,303.4782 362,306.4071 C362,307.8716 362,309.3333 362,310.791 C362,311.1554 362,311.5196 362,311.8835 " fill="none" id="E3-E5" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[67de17eac65622f97cb6ca46dafca775]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+top to bottom direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<history> История цен товара: Диалог" as E1 [[psysml:1f33790b-16dc-4ea0-8156-bea15870fa8c ]] {
+
+rec usage "<title> Название товара: Текст" as E2 [[psysml:af5e5734-121c-48e4-9db0-a5b491da848c ]] {
+
+}
+
+rec usage "<prices> Покупки товара: Таблица" as E3 [[psysml:7c663b5f-a3b6-426c-b0d3-f3b9c01796a1 ]] {
+
+comp usage "столбцы  " as E4  <<(T,blue) attribute>> [[psysml:bc4a6c4a-7974-4942-960e-0670daac0454 ]] {
+
+##//values//##
+
+ <U+003D> ("дата", "магазин", "цена единицы", "валюта")
+
+}
+
+}
+
+rec usage "<buttons> Действия: Панель" as E5 [[psysml:69e4f11b-9af5-4100-abad-69ff08019eda ]] {
+
+comp usage "действия  " as E6  <<(T,blue) attribute>> [[psysml:0fb7f238-c9bc-43b5-bedd-7236dae481ca ]] {
+
+##//values//##
+
+ <U+003D> ("Поделиться", "Закрыть")
+
+}
+
+}
+
+}
+
+E2 -[thickness=3]- E3 [[psysml:c2a4bc07-df97-47e9-bff6-53942eb6f560 ]]
+
+E3 -[thickness=3]- E5 [[psysml:0959170e-44cb-40e3-b540-b15c6819eb02 ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

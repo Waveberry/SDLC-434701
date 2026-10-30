@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="342px" preserveAspectRatio="none" style="width:366px;height:342px;background:#FFFFFF;" version="1.1" viewBox="0 0 366 342" width="366px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:14effc04-1ce1-4be3-a6f6-e19cc715737c" target="_top" title="psysml:14effc04-1ce1-4be3-a6f6-e19cc715737c" xlink:actuate="onRequest" xlink:href="psysml:14effc04-1ce1-4be3-a6f6-e19cc715737c" xlink:show="new" xlink:title="psysml:14effc04-1ce1-4be3-a6f6-e19cc715737c" xlink:type="simple"><rect fill="#FFFFFF" height="329.36" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="352" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="300" x="33" y="26.5332">&lt;card&gt; Добавить или изменить карту: Диалог</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="359" y1="34.6094" y2="34.6094"/></a></g><!--MD5=[f6df4d0ebaf0b5dfb2ced0ae5af7c670]
+cluster E4--><g id="cluster_E4"><a href="psysml:59762b7c-c22b-4aa0-8937-cdbf3a9c919c" target="_top" title="psysml:59762b7c-c22b-4aa0-8937-cdbf3a9c919c" xlink:actuate="onRequest" xlink:href="psysml:59762b7c-c22b-4aa0-8937-cdbf3a9c919c" xlink:show="new" xlink:title="psysml:59762b7c-c22b-4aa0-8937-cdbf3a9c919c" xlink:type="simple"><rect fill="#FFFFFF" height="147.36" id="E4" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="252" x="39" y="157"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="72" y="176.5332">&lt;buttons&gt; Действия: Панель</text><line style="stroke:#383838;stroke-width:1.0;" x1="39" x2="291" y1="184.6094" y2="184.6094"/></a></g><g><a href="psysml:aff4e22a-cd04-4127-be2c-21c871660b3d" target="_top" title="psysml:aff4e22a-cd04-4127-be2c-21c871660b3d" xlink:actuate="onRequest" xlink:href="psysml:aff4e22a-cd04-4127-be2c-21c871660b3d" xlink:show="new" xlink:title="psysml:aff4e22a-cd04-4127-be2c-21c871660b3d" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="254" x="56" y="43"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="243" x="61.5" y="62.5332">&lt;name&gt; Название карты: Поле ввода</text></a></g><g><a href="psysml:53181c5b-c54f-49a9-8561-f9549f39eadc" target="_top" title="psysml:53181c5b-c54f-49a9-8561-f9549f39eadc" xlink:actuate="onRequest" xlink:href="psysml:53181c5b-c54f-49a9-8561-f9549f39eadc" xlink:show="new" xlink:title="psysml:53181c5b-c54f-49a9-8561-f9549f39eadc" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E3" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="321" x="22.5" y="93"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="310" x="28" y="112.5332">&lt;digits&gt; Последние четыре цифры: Поле ввода</text></a></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><a href="psysml:7cd138ca-7a70-4434-9491-4e273d141786" target="_top" title="psysml:7cd138ca-7a70-4434-9491-4e273d141786" xlink:actuate="onRequest" xlink:href="psysml:7cd138ca-7a70-4434-9491-4e273d141786" xlink:show="new" xlink:title="psysml:7cd138ca-7a70-4434-9491-4e273d141786" xlink:type="simple"><g id="elem_E5"><rect fill="#FFFFFF" height="79.3563" id="E5" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="185" x="62.5" y="201"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="125.5" y="218.457">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="120.5" y="235.627">действия</text><line style="stroke:#181818;stroke-width:0.5;" x1="63.5" x2="246.5" y1="243.7031" y2="243.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="68.5" y="273.2801">= ("Сохранить", "Отмена")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="135" y="256.9316">values</text></g></a><!--MD5=[2720a5a1f2c3fca2055b230370638851]
+link E2 to E3--><g id="link_E2_E3"><a href="psysml:837c542e-759c-4d52-957b-8ecca6bb85d3" target="_top" title="psysml:837c542e-759c-4d52-957b-8ecca6bb85d3" xlink:actuate="onRequest" xlink:href="psysml:837c542e-759c-4d52-957b-8ecca6bb85d3" xlink:show="new" xlink:title="psysml:837c542e-759c-4d52-957b-8ecca6bb85d3" xlink:type="simple"><path d="M183,83.25 C183,86.38 183,89.62 183,92.75 " fill="none" id="E2-E3" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[af87c684e3b0d8be13c1a698a818ef1e]
+link E3 to E4--><g id="link_E3_E4"><a href="psysml:e43e7c36-660d-4195-9cf7-8e7fd907015f" target="_top" title="psysml:e43e7c36-660d-4195-9cf7-8e7fd907015f" xlink:actuate="onRequest" xlink:href="psysml:e43e7c36-660d-4195-9cf7-8e7fd907015f" xlink:show="new" xlink:title="psysml:e43e7c36-660d-4195-9cf7-8e7fd907015f" xlink:type="simple"><path d="M254.59,133.3 C257.65,135.59 260.48,138.15 263,141 C266.6413,145.13 269.6892,149.7377 272.2348,154.6429 C272.553,155.256 272.8633,155.8738 273.166,156.496 C273.2417,156.6515 273.3169,156.8073 273.3916,156.9633 " fill="none" id="E3-E4" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[971f0d4e7ae166a92e8da52c6d59d49e]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+top to bottom direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<card> Добавить или изменить карту: Диалог" as E1 [[psysml:14effc04-1ce1-4be3-a6f6-e19cc715737c ]] {
+
+rec usage "<name> Название карты: Поле ввода" as E2 [[psysml:aff4e22a-cd04-4127-be2c-21c871660b3d ]] {
+
+}
+
+rec usage "<digits> Последние четыре цифры: Поле ввода" as E3 [[psysml:53181c5b-c54f-49a9-8561-f9549f39eadc ]] {
+
+}
+
+rec usage "<buttons> Действия: Панель" as E4 [[psysml:59762b7c-c22b-4aa0-8937-cdbf3a9c919c ]] {
+
+comp usage "действия  " as E5  <<(T,blue) attribute>> [[psysml:7cd138ca-7a70-4434-9491-4e273d141786 ]] {
+
+##//values//##
+
+ <U+003D> ("Сохранить", "Отмена")
+
+}
+
+}
+
+}
+
+E2 -[thickness=3]- E3 [[psysml:837c542e-759c-4d52-957b-8ecca6bb85d3 ]]
+
+E3 -[thickness=3]- E4 [[psysml:e43e7c36-660d-4195-9cf7-8e7fd907015f ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>
