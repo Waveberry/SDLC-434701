@@ -1,0 +1,30 @@
+{
+  "date": "30.10.2026",
+  "version": "0.9.0",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "4feb486354e684bb49f40bbe23ba750b6a41b55fa28b539410f7ca7a0cc0f4ed"
+    },
+    {
+      "path": "app/build.gradle",
+      "sha256": "b0aa69bb59f5c56c595e64785bb9460028e2654a112fd5d903ac18ba3f8eeaf3"
+    },
+    {
+      "path": "app/src/main/java/com/waveberry/cheq/ui/RecognitionQueue.java",
+      "sha256": "902d01507d7bc65109911b1f7dc5d23f6a1b5ff9021cf63c7cf94e6c793f23c9"
+    },
+    {
+      "path": "app/src/main/java/com/waveberry/cheq/data/PendingReceiptStore.java",
+      "sha256": "e96d80d7e9476fd60b15085e2554eced36b5a7aa1b6c45c5ce24437cb830d915"
+    },
+    {
+      "path": "app/src/main/java/com/waveberry/cheq/cloud/GroqClient.java",
+      "sha256": "c07026956dbc734294e8efb13d99689684f3652f47ebd8584ee4bd1400460fd7"
+    },
+    {
+      "path": "app/src/main/java/com/waveberry/cheq/data/ReceiptStore.java",
+      "sha256": "495159ea9677bb47c2b49fe136269526848da7931221d61a8f4522c3d0cc8329"
+    }
+  ]
+}

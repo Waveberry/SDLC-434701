@@ -1,0 +1,146 @@
+{
+  "kernel": "jupyter-sysml-kernel-0.63.1-all.jar",
+  "models": [
+    {
+      "file": "01-context.sysml",
+      "sha256": "eaab0684fa51cfd4878d804f476df369cb88a14b2b332fd19c01a9ffa5c15bf2",
+      "status": "valid"
+    },
+    {
+      "file": "02-usecases.sysml",
+      "sha256": "5b10b299169dc728bfae99d1266d561671a51ff4a5c37e0df3cd89321d6121f0",
+      "status": "valid"
+    },
+    {
+      "file": "03-business-goals.sysml",
+      "sha256": "dd9216a3da363748053a14d51fa1fd033ebca33382406623d246da713ed82eb7",
+      "status": "valid"
+    },
+    {
+      "file": "04-receipt-states.sysml",
+      "sha256": "403ed024bc00b0da3d064a5d7c94ecbb7e7d6ede9b55912bda6981a251c295dc",
+      "status": "valid"
+    },
+    {
+      "file": "05-receipt-import.sysml",
+      "sha256": "e1847b07de80e124d57f08c81f12c77901fcef8362a3d26a61fd81d2be91c3b6",
+      "status": "valid"
+    },
+    {
+      "file": "06-gui.sysml",
+      "sha256": "212f472fe5c2d714970def8d61046930967ace337979e0f4be7289a9739f728e",
+      "status": "valid"
+    },
+    {
+      "file": "cheq.sysml",
+      "sha256": "5cbb71997748dd53d023d5279e6011762ef41f79e91b809cc2aa6de58034fb4d",
+      "status": "valid"
+    }
+  ],
+  "views": [
+    {
+      "file": "01-business-goals.png",
+      "element": "CheqBusinessGoals::BG",
+      "view": "Tree",
+      "style": "LR",
+      "command": "%viz --view=Tree --style=LR CheqBusinessGoals::BG",
+      "sha256": "083b3dc73b55a6216a333ebe9ef6e785df5e2fd1d97d6edcc6a2f177ba53bc7f"
+    },
+    {
+      "file": "02-context.png",
+      "element": "CheqContext::context",
+      "view": "Interconnection",
+      "style": "LR",
+      "command": "%viz --view=Interconnection --style=LR CheqContext::context",
+      "sha256": "46aaea8a97f5b25b72b3681338f654110c345a3511c87785508aa52497736974"
+    },
+    {
+      "file": "03-usecases.png",
+      "element": "CheqUseCases::Work",
+      "view": "Case",
+      "style": "LR",
+      "command": "%viz --view=Case --style=LR CheqUseCases::Work",
+      "sha256": "2b35f0691922f763cf5b3b90dd48b339454e64b41079bb4ce52175443cdc20f8"
+    },
+    {
+      "file": "04-receipt-states.png",
+      "element": "CheqReceiptStates::ReceiptState",
+      "view": "State",
+      "style": "TB",
+      "command": "%viz --view=State --style=TB CheqReceiptStates::ReceiptState",
+      "sha256": "6b4ba5f39151358bd098cb9ebea197edf6c11a9fed08565bf03e46a14f73a7bf"
+    },
+    {
+      "file": "05-receipt-import.png",
+      "element": "CheqReceiptImport::ImportReceipt",
+      "view": "Action",
+      "style": "TB",
+      "command": "%viz --view=Action --style=TB CheqReceiptImport::ImportReceipt",
+      "sha256": "17fbb0d0efb43c73c0a9938d017ef38f70d9077e4240b1971518d408fa7be378"
+    },
+    {
+      "file": "06-navigation.png",
+      "element": "CheqNavigation::nav",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqNavigation::nav",
+      "sha256": "e4e06b02d59942257743b0e319d3613c351bd9d0501260f9c1cf386682e5530f"
+    },
+    {
+      "file": "07-gui-purchases.png",
+      "element": "CheqGui::purchases",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::purchases",
+      "sha256": "57560e39c76fe957b8dc84c23b1ddbb1831b655c96d48fbf8c176f6c05fb9564"
+    },
+    {
+      "file": "08-gui-editor.png",
+      "element": "CheqGui::editor",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::editor",
+      "sha256": "e4544337ec559b2300c251e82a21eed84b64279b6bba60d8785f5916fe3b2bd7"
+    },
+    {
+      "file": "09-gui-products.png",
+      "element": "CheqGui::products",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::products",
+      "sha256": "d80e2b2767856e87cfc069feedd8665ffba63e87d6ad0602b3f3ef1aabeb92f3"
+    },
+    {
+      "file": "10-gui-history.png",
+      "element": "CheqGui::history",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::history",
+      "sha256": "d8115f578b4e1f8463f4c9f60a5370c0905ab582fc0bfbcc1c6739e9accc71ba"
+    },
+    {
+      "file": "11-gui-expenses.png",
+      "element": "CheqGui::expenses",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::expenses",
+      "sha256": "e771ac617e723be67f976e041d558c6ce653a3b21de0bdfb8935bf3b1274e4c6"
+    },
+    {
+      "file": "12-gui-settings.png",
+      "element": "CheqGui::settings",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::settings",
+      "sha256": "dd4949aeb230624684dc01a1857bbdf06eb77ffb72988dffcf0738b29697b19b"
+    },
+    {
+      "file": "13-gui-card.png",
+      "element": "CheqGui::card",
+      "view": "Interconnection",
+      "style": "TB",
+      "command": "%viz --view=Interconnection --style=TB CheqGui::card",
+      "sha256": "93c7cda34ead26c67860ff52911ea1d46a0266becdd6f450cd7a249a02964777"
+    }
+  ]
+}

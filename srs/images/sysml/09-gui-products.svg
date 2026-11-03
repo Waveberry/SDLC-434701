@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="667px" preserveAspectRatio="none" style="width:626px;height:667px;background:#FFFFFF;" version="1.1" viewBox="0 0 626 667" width="626px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:b0c725ec-d4e2-4c29-91b2-4ddc5db69fb2" target="_top" title="psysml:b0c725ec-d4e2-4c29-91b2-4ddc5db69fb2" xlink:actuate="onRequest" xlink:href="psysml:b0c725ec-d4e2-4c29-91b2-4ddc5db69fb2" xlink:show="new" xlink:title="psysml:b0c725ec-d4e2-4c29-91b2-4ddc5db69fb2" xlink:type="simple"><rect fill="#FFFFFF" height="654.07" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="612" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="226.5" y="26.5332">&lt;products&gt; Товары: Экран</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="619" y1="34.6094" y2="34.6094"/></a></g><!--MD5=[d5e69f78d87373223dbae638b30a9c99]
+cluster E3--><g id="cluster_E3"><a href="psysml:a333ca4e-98b6-41a2-9fec-e92a5f09d779" target="_top" title="psysml:a333ca4e-98b6-41a2-9fec-e92a5f09d779" xlink:actuate="onRequest" xlink:href="psysml:a333ca4e-98b6-41a2-9fec-e92a5f09d779" xlink:show="new" xlink:title="psysml:a333ca4e-98b6-41a2-9fec-e92a5f09d779" xlink:type="simple"><rect fill="#FFFFFF" height="147.36" id="E3" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="313" x="39" y="59"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="109" y="78.5332">&lt;sort&gt; Сортировка: Выбор</text><line style="stroke:#383838;stroke-width:1.0;" x1="39" x2="352" y1="86.6094" y2="86.6094"/></a></g><!--MD5=[de5ec2e2e8f62f467e546659f5068c88]
+cluster E5--><g id="cluster_E5"><a href="psysml:70257e85-d380-4f83-8393-42745e1be665" target="_top" title="psysml:70257e85-d380-4f83-8393-42745e1be665" xlink:actuate="onRequest" xlink:href="psysml:70257e85-d380-4f83-8393-42745e1be665" xlink:show="new" xlink:title="psysml:70257e85-d380-4f83-8393-42745e1be665" xlink:type="simple"><rect fill="#FFFFFF" height="147.35" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="294" x="39" y="246.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="60" y="265.8932">&lt;displayMode&gt; Представление: Выбор</text><line style="stroke:#383838;stroke-width:1.0;" x1="39" x2="333" y1="273.9694" y2="273.9694"/></a></g><!--MD5=[55dfccfc6c49c2d10cd1bd2211a6c90c]
+cluster E8--><g id="cluster_E8"><a href="psysml:dbb8c5be-6413-4b3f-87eb-776f558ec272" target="_top" title="psysml:dbb8c5be-6413-4b3f-87eb-776f558ec272" xlink:actuate="onRequest" xlink:href="psysml:dbb8c5be-6413-4b3f-87eb-776f558ec272" xlink:show="new" xlink:title="psysml:dbb8c5be-6413-4b3f-87eb-776f558ec272" xlink:type="simple"><rect fill="#FFFFFF" height="147.36" id="E8" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="379" x="74" y="481.71"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="278" x="124.5" y="501.2432">&lt;buttons&gt; Действия с выбранным: Панель</text><line style="stroke:#383838;stroke-width:1.0;" x1="74" x2="453" y1="509.3194" y2="509.3194"/></a></g><g><a href="psysml:ec41468b-f9a0-4512-a124-a413626c9493" target="_top" title="psysml:ec41468b-f9a0-4512-a124-a413626c9493" xlink:actuate="onRequest" xlink:href="psysml:ec41468b-f9a0-4512-a124-a413626c9493" xlink:show="new" xlink:title="psysml:ec41468b-f9a0-4512-a124-a413626c9493" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="245" x="357.5" y="310.04"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="363" y="329.5732">&lt;search&gt; Поиск товара: Поле ввода</text></a></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><a href="psysml:a438952a-deff-46f6-83d3-ccdfc8dddedd" target="_top" title="psysml:a438952a-deff-46f6-83d3-ccdfc8dddedd" xlink:actuate="onRequest" xlink:href="psysml:a438952a-deff-46f6-83d3-ccdfc8dddedd" xlink:show="new" xlink:title="psysml:a438952a-deff-46f6-83d3-ccdfc8dddedd" xlink:type="simple"><g id="elem_E4"><rect fill="#FFFFFF" height="79.3563" id="E4" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="246" x="63" y="103"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="156.5" y="120.457">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="150" y="137.627">варианты</text><line style="stroke:#181818;stroke-width:0.5;" x1="64" x2="308" y1="145.7031" y2="145.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="69" y="175.2801">= ("по дате", "по имени", "по цене")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="166" y="158.9316">values</text></g></a><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><a href="psysml:79da0cc6-241b-4d53-903c-65d91f7c6ec4" target="_top" title="psysml:79da0cc6-241b-4d53-903c-65d91f7c6ec4" xlink:actuate="onRequest" xlink:href="psysml:79da0cc6-241b-4d53-903c-65d91f7c6ec4" xlink:show="new" xlink:title="psysml:79da0cc6-241b-4d53-903c-65d91f7c6ec4" xlink:type="simple"><g id="elem_E6"><rect fill="#FFFFFF" height="79.3563" id="E6" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="169" x="90.5" y="290.36"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="145.5" y="307.817">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="139" y="324.987">варианты</text><line style="stroke:#181818;stroke-width:0.5;" x1="91.5" x2="258.5" y1="333.0631" y2="333.0631"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="96.5" y="362.6401">= ("Карточки", "Список")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="155" y="346.2916">values</text></g></a><g><a href="psysml:6da5da2a-1cb1-431b-9a29-b59d7a930830" target="_top" title="psysml:6da5da2a-1cb1-431b-9a29-b59d7a930830" xlink:actuate="onRequest" xlink:href="psysml:6da5da2a-1cb1-431b-9a29-b59d7a930830" xlink:show="new" xlink:title="psysml:6da5da2a-1cb1-431b-9a29-b59d7a930830" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E7" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="235" x="327.5" y="417.71"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="333" y="437.2432">&lt;list&gt; Товары и категории: Список</text></a></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><a href="psysml:47232e8c-1983-44d4-aa89-ac7638b66db9" target="_top" title="psysml:47232e8c-1983-44d4-aa89-ac7638b66db9" xlink:actuate="onRequest" xlink:href="psysml:47232e8c-1983-44d4-aa89-ac7638b66db9" xlink:show="new" xlink:title="psysml:47232e8c-1983-44d4-aa89-ac7638b66db9" xlink:type="simple"><g id="elem_E9"><rect fill="#FFFFFF" height="79.3563" id="E9" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="312" x="98" y="525.71"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="224.5" y="543.167">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="219.5" y="560.337">действия</text><line style="stroke:#181818;stroke-width:0.5;" x1="99" x2="409" y1="568.4131" y2="568.4131"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="300" x="104" y="597.9901">= ("История цен", "Категория", "Поделиться")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="234" y="581.6416">values</text></g></a><!--MD5=[e3d2a08a9c9236652057e8ed0cbc9b62]
+link E2 to E7--><g id="link_E2_E7"><a href="psysml:1074f3ca-7b82-4180-8d0f-79a0f4f08dc8" target="_top" title="psysml:1074f3ca-7b82-4180-8d0f-79a0f4f08dc8" xlink:actuate="onRequest" xlink:href="psysml:1074f3ca-7b82-4180-8d0f-79a0f4f08dc8" xlink:show="new" xlink:title="psysml:1074f3ca-7b82-4180-8d0f-79a0f4f08dc8" xlink:type="simple"><path d="M473.58,350.42 C467.27,369.49 457.68,398.43 451.38,417.45 " fill="none" id="E2-E7" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[0188b64bb0ae78505a997a81836e11e9]
+link E3 to E5--><g id="link_E3_E5"><a href="psysml:cd93b432-d919-447b-843b-80e54cf8c4f4" target="_top" title="psysml:cd93b432-d919-447b-843b-80e54cf8c4f4" xlink:actuate="onRequest" xlink:href="psysml:cd93b432-d919-447b-843b-80e54cf8c4f4" xlink:show="new" xlink:title="psysml:cd93b432-d919-447b-843b-80e54cf8c4f4" xlink:type="simple"><path d="M329.6483,206.7392 C329.5383,207.3484 329.4291,207.9583 329.321,208.5684 C328.8886,211.0092 328.4726,213.456 328.0777,215.8962 C327.2878,220.7767 326.5825,225.6313 326,230.36 C325.675,232.9975 325.3747,235.6773 325.0973,238.3847 C324.9586,239.7384 324.8256,241.099 324.6981,242.4646 C324.6343,243.1474 324.572,243.8315 324.5109,244.5166 C324.4804,244.8592 324.4502,245.202 324.4204,245.545 C324.4055,245.7165 324.3906,245.8881 324.3759,246.0597 " fill="none" id="E3-E5" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[3a9b96bfbf6b6ad89c494e81751bda47]
+link E5 to E7--><g id="link_E5_E7"><a href="psysml:aa386a67-a8c2-4597-ab20-49a9e93d1e49" target="_top" title="psysml:aa386a67-a8c2-4597-ab20-49a9e93d1e49" xlink:actuate="onRequest" xlink:href="psysml:aa386a67-a8c2-4597-ab20-49a9e93d1e49" xlink:show="new" xlink:title="psysml:aa386a67-a8c2-4597-ab20-49a9e93d1e49" xlink:type="simple"><path d="M317.651,393.8418 C317.727,394.093 317.8048,394.3436 317.8843,394.5935 C318.0434,395.0933 318.2097,395.5902 318.3833,396.0841 C318.7304,397.0718 319.1069,398.0473 319.5145,399.0082 C321.1447,402.8522 323.2713,406.465 326,409.71 C328.32,412.47 332.12,414.97 336.97,417.23 " fill="none" id="E5-E7" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[79bc8f324ef4d02c541433f2e6e513c3]
+link E7 to E8--><g id="link_E7_E8"><a href="psysml:5143e184-fb28-4f55-9f42-4751848e0730" target="_top" title="psysml:5143e184-fb28-4f55-9f42-4751848e0730" xlink:actuate="onRequest" xlink:href="psysml:5143e184-fb28-4f55-9f42-4751848e0730" xlink:show="new" xlink:title="psysml:5143e184-fb28-4f55-9f42-4751848e0730" xlink:type="simple"><path d="M445,458.08 C445,462.4175 445,467.2972 445,472.52 C445,475.1313 445,477.8285 445,480.5865 C445,480.9313 445,481.277 445,481.6236 " fill="none" id="E7-E8" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[0a68e0f9b58a8321546670f72f548f89]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+top to bottom direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<products> Товары: Экран" as E1 [[psysml:b0c725ec-d4e2-4c29-91b2-4ddc5db69fb2 ]] {
+
+rec usage "<search> Поиск товара: Поле ввода" as E2 [[psysml:ec41468b-f9a0-4512-a124-a413626c9493 ]] {
+
+}
+
+rec usage "<sort> Сортировка: Выбор" as E3 [[psysml:a333ca4e-98b6-41a2-9fec-e92a5f09d779 ]] {
+
+comp usage "варианты  " as E4  <<(T,blue) attribute>> [[psysml:a438952a-deff-46f6-83d3-ccdfc8dddedd ]] {
+
+##//values//##
+
+ <U+003D> ("по дате", "по имени", "по цене")
+
+}
+
+}
+
+rec usage "<displayMode> Представление: Выбор" as E5 [[psysml:70257e85-d380-4f83-8393-42745e1be665 ]] {
+
+comp usage "варианты  " as E6  <<(T,blue) attribute>> [[psysml:79da0cc6-241b-4d53-903c-65d91f7c6ec4 ]] {
+
+##//values//##
+
+ <U+003D> ("Карточки", "Список")
+
+}
+
+}
+
+rec usage "<list> Товары и категории: Список" as E7 [[psysml:6da5da2a-1cb1-431b-9a29-b59d7a930830 ]] {
+
+}
+
+rec usage "<buttons> Действия с выбранным: Панель" as E8 [[psysml:dbb8c5be-6413-4b3f-87eb-776f558ec272 ]] {
+
+comp usage "действия  " as E9  <<(T,blue) attribute>> [[psysml:47232e8c-1983-44d4-aa89-ac7638b66db9 ]] {
+
+##//values//##
+
+ <U+003D> ("История цен", "Категория", "Поделиться")
+
+}
+
+}
+
+}
+
+E2 -[thickness=3]- E7 [[psysml:1074f3ca-7b82-4180-8d0f-79a0f4f08dc8 ]]
+
+E3 -[thickness=3]- E5 [[psysml:cd93b432-d919-447b-843b-80e54cf8c4f4 ]]
+
+E5 -[thickness=3]- E7 [[psysml:aa386a67-a8c2-4597-ab20-49a9e93d1e49 ]]
+
+E7 -[thickness=3]- E8 [[psysml:5143e184-fb28-4f55-9f42-4751848e0730 ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

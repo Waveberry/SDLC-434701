@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="606px" preserveAspectRatio="none" style="width:604px;height:606px;background:#FFFFFF;" version="1.1" viewBox="0 0 604 606" width="604px" zoomAndPan="magnify"><defs/><g><g><a href="psysml:9c4ec2e2-fee4-4580-9a29-59f663d988ba" target="_top" title="psysml:9c4ec2e2-fee4-4580-9a29-59f663d988ba" xlink:actuate="onRequest" xlink:href="psysml:9c4ec2e2-fee4-4580-9a29-59f663d988ba" xlink:show="new" xlink:title="psysml:9c4ec2e2-fee4-4580-9a29-59f663d988ba" xlink:type="simple"><rect fill="#FFFFFF" height="47.7031" id="E4" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="301" x="37" y="552.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="106" x="134.5" y="569.957">«include use case»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="282" x="42.5" y="587.127">scenario1: ВИ-1 Добавить покупку вручную</text></a></g><g><a href="psysml:5862cb83-43ae-43ce-b23f-c7ddfa4f158d" target="_top" title="psysml:5862cb83-43ae-43ce-b23f-c7ddfa4f158d" xlink:actuate="onRequest" xlink:href="psysml:5862cb83-43ae-43ce-b23f-c7ddfa4f158d" xlink:show="new" xlink:title="psysml:5862cb83-43ae-43ce-b23f-c7ddfa4f158d" xlink:type="simple"><rect fill="#FFFFFF" height="47.7031" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="341" x="17" y="469.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="106" x="134.5" y="486.957">«include use case»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="322" x="22.5" y="504.127">scenario2: ВИ-2 Импортировать и проверить чек</text></a></g><g><a href="psysml:7b90de04-2fd8-42bb-b4a6-2bc532659a5a" target="_top" title="psysml:7b90de04-2fd8-42bb-b4a6-2bc532659a5a" xlink:actuate="onRequest" xlink:href="psysml:7b90de04-2fd8-42bb-b4a6-2bc532659a5a" xlink:show="new" xlink:title="psysml:7b90de04-2fd8-42bb-b4a6-2bc532659a5a" xlink:type="simple"><rect fill="#FFFFFF" height="47.7031" id="E6" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="321" x="27" y="386.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="106" x="134.5" y="403.957">«include use case»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="32.5" y="421.127">scenario3: ВИ-3 Найти покупку и историю цен</text></a></g><g><a href="psysml:51da9f64-a700-4b14-944f-35a2b9a806f5" target="_top" title="psysml:51da9f64-a700-4b14-944f-35a2b9a806f5" xlink:actuate="onRequest" xlink:href="psysml:51da9f64-a700-4b14-944f-35a2b9a806f5" xlink:show="new" xlink:title="psysml:51da9f64-a700-4b14-944f-35a2b9a806f5" xlink:type="simple"><rect fill="#FFFFFF" height="47.7031" id="E7" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="360" x="7.5" y="303.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="106" x="134.5" y="320.957">«include use case»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="341" x="13" y="338.127">scenario4: ВИ-4 Контролировать расходы и бюджет</text></a></g><g><a href="psysml:9586e5b5-68c1-4191-a1e6-02a9b8af5125" target="_top" title="psysml:9586e5b5-68c1-4191-a1e6-02a9b8af5125" xlink:actuate="onRequest" xlink:href="psysml:9586e5b5-68c1-4191-a1e6-02a9b8af5125" xlink:show="new" xlink:title="psysml:9586e5b5-68c1-4191-a1e6-02a9b8af5125" xlink:type="simple"><rect fill="#FFFFFF" height="47.7031" id="E8" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="302" x="36.5" y="220.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="106" x="134.5" y="237.957">«include use case»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="283" x="42" y="255.127">scenario5: ВИ-5 Настроить карты и валюту</text></a></g><g><a href="psysml:bb007d20-18e3-419b-8649-839f366bbcbd" target="_top" title="psysml:bb007d20-18e3-419b-8649-839f366bbcbd" xlink:actuate="onRequest" xlink:href="psysml:bb007d20-18e3-419b-8649-839f366bbcbd" xlink:show="new" xlink:title="psysml:bb007d20-18e3-419b-8649-839f366bbcbd" xlink:type="simple"><rect fill="#FFFFFF" height="47.7031" id="E9" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="361" x="7" y="137.5"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="106" x="134.5" y="154.957">«include use case»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="12.5" y="172.127">scenario6: ВИ-6 Экспортировать выбранные записи</text></a></g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><a href="psysml:643b2fde-36e1-477f-ac96-4c6265414b41" target="_top" title="psysml:643b2fde-36e1-477f-ac96-4c6265414b41" xlink:actuate="onRequest" xlink:href="psysml:643b2fde-36e1-477f-ac96-4c6265414b41" xlink:show="new" xlink:title="psysml:643b2fde-36e1-477f-ac96-4c6265414b41" xlink:type="simple"><g id="elem_E1"><rect fill="#FFFFFF" height="50.7031" id="E1" style="stroke:#181818;stroke-width:0.5;" width="270" x="52.5" y="52"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="86" x="144.5" y="69.457">«use case  def»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="55.5" y="86.627">&lt;Work&gt; Работа с личным архивом Cheq</text><line style="stroke:#181818;stroke-width:0.5;" x1="53.5" x2="321.5" y1="94.7031" y2="94.7031"/></g></a><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><a href="psysml:f631c1aa-0af2-4740-b8b6-e1c79ee4ef1e" target="_top" title="psysml:f631c1aa-0af2-4740-b8b6-e1c79ee4ef1e" xlink:actuate="onRequest" xlink:href="psysml:f631c1aa-0af2-4740-b8b6-e1c79ee4ef1e" xlink:show="new" xlink:title="psysml:f631c1aa-0af2-4740-b8b6-e1c79ee4ef1e" xlink:type="simple"><g id="elem_E2"><rect fill="#FFFFFF" height="50.7031" id="E2" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="56" x="484.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="54" x="485.5" y="24.457">«subject»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="500.5" y="41.627">app</text><line style="stroke:#181818;stroke-width:0.5;" x1="485.5" x2="539.5" y1="49.7031" y2="49.7031"/></g></a><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><a href="psysml:8399ff5d-d843-4982-8950-909e7ed32f97" target="_top" title="psysml:8399ff5d-d843-4982-8950-909e7ed32f97" xlink:actuate="onRequest" xlink:href="psysml:8399ff5d-d843-4982-8950-909e7ed32f97" xlink:show="new" xlink:title="psysml:8399ff5d-d843-4982-8950-909e7ed32f97" xlink:type="simple"><g id="elem_E3"><rect fill="#FFFFFF" height="60.5938" id="E3" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="169" x="428" y="93.05"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="35" x="495" y="110.507">«part»</text><path d="M442,113.1438 C439.25,113.1438 437,115.9438 437,119.3938 C437,122.8438 439.25,125.6438 442,125.6438 C444.75,125.6438 447,122.8438 447,119.3938 C447,115.9438 444.75,113.1438 442,113.1438 M436.775,125.6438 C434.125,125.7688 432,127.9438 432,130.6438 L432,133.1438 L452,133.1438 L452,130.6438 C452,127.9438 449.9,125.7688 447.225,125.6438 C445.875,127.1688 444.025,128.1438 442,128.1438 C439.975,128.1438 438.125,127.1688 436.775,125.6438 " fill="#000000" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="457" y="137.5676">user: Пользователь</text><line style="stroke:#181818;stroke-width:0.5;" x1="429" x2="596" y1="145.6438" y2="145.6438"/></g></a><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><a href="psysml:4bf680d9-ca16-4975-92b7-f2e387a17dd0" target="_top" title="psysml:4bf680d9-ca16-4975-92b7-f2e387a17dd0" xlink:actuate="onRequest" xlink:href="psysml:4bf680d9-ca16-4975-92b7-f2e387a17dd0" xlink:show="new" xlink:title="psysml:4bf680d9-ca16-4975-92b7-f2e387a17dd0" xlink:type="simple"><path d="M336.85,56.68 C392.85,48.88 450.97,40.78 484.05,36.17 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="324.17,58.45,330.6662,61.5805,336.0544,56.788,329.5582,53.6576,324.17,58.45" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[5a52c8b875856e813bbf7898a393ae67]
+link E1 to E3--><g id="link_E1_E3"><a href="psysml:03cfea4d-33ad-4d96-bd06-f626972de95a" target="_top" title="psysml:03cfea4d-33ad-4d96-bd06-f626972de95a" xlink:actuate="onRequest" xlink:href="psysml:03cfea4d-33ad-4d96-bd06-f626972de95a" xlink:show="new" xlink:title="psysml:03cfea4d-33ad-4d96-bd06-f626972de95a" xlink:type="simple"><path d="M322.68,96.46 C358.21,101.52 395.56,106.84 427.57,111.4 " fill="none" id="E1-E3" style="stroke:#181818;stroke-width:1.0;"/></a></g><!--MD5=[6c84c2a7c6184e2bf82d8ca8d1380e9e]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+left to right direction
+
+
+
+comp def "~<Work> Работа с личным архивом Cheq" as E1  <<(T,blue) use case  def>> [[psysml:643b2fde-36e1-477f-ac96-4c6265414b41 ]] {
+
+}
+
+comp usage "app" as E2 <<subject>>[[psysml:f631c1aa-0af2-4740-b8b6-e1c79ee4ef1e ]] {
+
+}
+
+comp usage "<size:30><&person></size> user: Пользователь  " as E3  <<(T,blue) part>> [[psysml:8399ff5d-d843-4982-8950-909e7ed32f97 ]] {
+
+}
+
+rec usage "scenario1: ВИ-1 Добавить покупку вручную  " as E4  << include use case>> [[psysml:9c4ec2e2-fee4-4580-9a29-59f663d988ba ]] {
+
+}
+
+rec usage "scenario2: ВИ-2 Импортировать и проверить чек  " as E5  << include use case>> [[psysml:5862cb83-43ae-43ce-b23f-c7ddfa4f158d ]] {
+
+}
+
+rec usage "scenario3: ВИ-3 Найти покупку и историю цен  " as E6  << include use case>> [[psysml:7b90de04-2fd8-42bb-b4a6-2bc532659a5a ]] {
+
+}
+
+rec usage "scenario4: ВИ-4 Контролировать расходы и бюджет  " as E7  << include use case>> [[psysml:51da9f64-a700-4b14-944f-35a2b9a806f5 ]] {
+
+}
+
+rec usage "scenario5: ВИ-5 Настроить карты и валюту  " as E8  << include use case>> [[psysml:9586e5b5-68c1-4191-a1e6-02a9b8af5125 ]] {
+
+}
+
+rec usage "scenario6: ВИ-6 Экспортировать выбранные записи  " as E9  << include use case>> [[psysml:bb007d20-18e3-419b-8649-839f366bbcbd ]] {
+
+}
+
+E1 o- - E2 [[psysml:4bf680d9-ca16-4975-92b7-f2e387a17dd0 ]]
+
+E1 - - E3 [[psysml:03cfea4d-33ad-4d96-bd06-f626972de95a ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

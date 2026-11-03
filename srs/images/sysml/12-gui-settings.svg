@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="540px" preserveAspectRatio="none" style="width:844px;height:540px;background:#FFFFFF;" version="1.1" viewBox="0 0 844 540" width="844px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:8f5abc9a-d11e-4d36-88bb-caba27314d4b" target="_top" title="psysml:8f5abc9a-d11e-4d36-88bb-caba27314d4b" xlink:actuate="onRequest" xlink:href="psysml:8f5abc9a-d11e-4d36-88bb-caba27314d4b" xlink:show="new" xlink:title="psysml:8f5abc9a-d11e-4d36-88bb-caba27314d4b" xlink:type="simple"><rect fill="#FFFFFF" height="527.36" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="830" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="329" y="26.5332">&lt;settings&gt; Настройки: Экран</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="837" y1="34.6094" y2="34.6094"/></a></g><!--MD5=[e4f7fae6ed58524ba242bb0b0d3be6b7]
+cluster E2--><g id="cluster_E2"><a href="psysml:0d700020-87de-4b29-b9fc-d7642110de11" target="_top" title="psysml:0d700020-87de-4b29-b9fc-d7642110de11" xlink:actuate="onRequest" xlink:href="psysml:0d700020-87de-4b29-b9fc-d7642110de11" xlink:show="new" xlink:title="psysml:0d700020-87de-4b29-b9fc-d7642110de11" xlink:type="simple"><rect fill="#FFFFFF" height="147.36" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="347" x="102" y="59"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="203" y="78.5332">&lt;theme&gt; Тема: Выбор</text><line style="stroke:#383838;stroke-width:1.0;" x1="102" x2="449" y1="86.6094" y2="86.6094"/></a></g><!--MD5=[de5ec2e2e8f62f467e546659f5068c88]
+cluster E5--><g id="cluster_E5"><a href="psysml:e0c2c24b-df45-4717-8da7-55af1c6af23c" target="_top" title="psysml:e0c2c24b-df45-4717-8da7-55af1c6af23c" xlink:actuate="onRequest" xlink:href="psysml:e0c2c24b-df45-4717-8da7-55af1c6af23c" xlink:show="new" xlink:title="psysml:e0c2c24b-df45-4717-8da7-55af1c6af23c" xlink:type="simple"><rect fill="#FFFFFF" height="208" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="410" x="39" y="294.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="158.5" y="313.8932">&lt;budget&gt; Бюджет: Группа</text><line style="stroke:#383838;stroke-width:1.0;" x1="39" x2="449" y1="321.9694" y2="321.9694"/></a></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><a href="psysml:a913786d-ccd4-4859-ae62-4c0e4c166967" target="_top" title="psysml:a913786d-ccd4-4859-ae62-4c0e4c166967" xlink:actuate="onRequest" xlink:href="psysml:a913786d-ccd4-4859-ae62-4c0e4c166967" xlink:show="new" xlink:title="psysml:a913786d-ccd4-4859-ae62-4c0e4c166967" xlink:type="simple"><g id="elem_E3"><rect fill="#FFFFFF" height="79.3563" id="E3" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;" width="279" x="126.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="236.5" y="120.457">«attribute»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="230" y="137.627">варианты</text><line style="stroke:#181818;stroke-width:0.5;" x1="127.5" x2="404.5" y1="145.7031" y2="145.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="267" x="132.5" y="175.2801">= ("Как в системе", "Светлая", "Тёмная")</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="40" x="246" y="158.9316">values</text></g></a><g><a href="psysml:30dd43ea-9a74-448e-bd82-bc9f315e3d7e" target="_top" title="psysml:30dd43ea-9a74-448e-bd82-bc9f315e3d7e" xlink:actuate="onRequest" xlink:href="psysml:30dd43ea-9a74-448e-bd82-bc9f315e3d7e" xlink:show="new" xlink:title="psysml:30dd43ea-9a74-448e-bd82-bc9f315e3d7e" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E4" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="236" x="323" y="230.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="328.5" y="249.8932">&lt;currency&gt; Общая валюта: Выбор</text></a></g><g><a href="psysml:49cd8f19-fe8e-44d7-95b8-052915a2f9a7" target="_top" title="psysml:49cd8f19-fe8e-44d7-95b8-052915a2f9a7" xlink:actuate="onRequest" xlink:href="psysml:49cd8f19-fe8e-44d7-95b8-052915a2f9a7" xlink:show="new" xlink:title="psysml:49cd8f19-fe8e-44d7-95b8-052915a2f9a7" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E6" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="206" x="137" y="338.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="142.5" y="357.8932">&lt;month&gt; Месяц лимита: Дата</text></a></g><g><a href="psysml:760323bc-749c-4184-8470-1951e37077b7" target="_top" title="psysml:760323bc-749c-4184-8470-1951e37077b7" xlink:actuate="onRequest" xlink:href="psysml:760323bc-749c-4184-8470-1951e37077b7" xlink:show="new" xlink:title="psysml:760323bc-749c-4184-8470-1951e37077b7" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E7" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="354" x="63" y="388.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="343" x="68.5" y="407.8932">&lt;amount&gt; Сумма лимита, 0 без лимита: Поле ввода</text></a></g><g><a href="psysml:2f475562-38c9-4338-a867-1f12bc97fc2b" target="_top" title="psysml:2f475562-38c9-4338-a867-1f12bc97fc2b" xlink:actuate="onRequest" xlink:href="psysml:2f475562-38c9-4338-a867-1f12bc97fc2b" xlink:show="new" xlink:title="psysml:2f475562-38c9-4338-a867-1f12bc97fc2b" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E8" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="244" x="118" y="438.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="233" x="123.5" y="457.8932">&lt;save&gt; Сохранить бюджет: Панель</text></a></g><g><a href="psysml:88003b02-db9f-48e5-99ad-c75498a38744" target="_top" title="psysml:88003b02-db9f-48e5-99ad-c75498a38744" xlink:actuate="onRequest" xlink:href="psysml:88003b02-db9f-48e5-99ad-c75498a38744" xlink:show="new" xlink:title="psysml:88003b02-db9f-48e5-99ad-c75498a38744" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E9" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="348" x="473" y="388.36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="478.5" y="407.8932">&lt;cards&gt; Управление банковскими картами: Список</text></a></g><!--MD5=[02c70b7c851c11e3980e4e90450dc5dd]
+link E6 to E7--><g id="link_E6_E7"><a href="psysml:11fc4594-6366-48b8-aaf2-ba9af5311bc8" target="_top" title="psysml:11fc4594-6366-48b8-aaf2-ba9af5311bc8" xlink:actuate="onRequest" xlink:href="psysml:11fc4594-6366-48b8-aaf2-ba9af5311bc8" xlink:show="new" xlink:title="psysml:11fc4594-6366-48b8-aaf2-ba9af5311bc8" xlink:type="simple"><path d="M240,378.61 C240,381.74 240,384.98 240,388.11 " fill="none" id="E6-E7" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[79bc8f324ef4d02c541433f2e6e513c3]
+link E7 to E8--><g id="link_E7_E8"><a href="psysml:d7ecbfce-55c2-40df-9b8e-86011cefafde" target="_top" title="psysml:d7ecbfce-55c2-40df-9b8e-86011cefafde" xlink:actuate="onRequest" xlink:href="psysml:d7ecbfce-55c2-40df-9b8e-86011cefafde" xlink:show="new" xlink:title="psysml:d7ecbfce-55c2-40df-9b8e-86011cefafde" xlink:type="simple"><path d="M240,428.61 C240,431.74 240,434.98 240,438.11 " fill="none" id="E7-E8" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[4d03bb2d0377dc85ccfab60ff574652b]
+link E2 to E4--><g id="link_E2_E4"><a href="psysml:d1856ead-47d8-4a4f-923f-12e015cf5920" target="_top" title="psysml:d1856ead-47d8-4a4f-923f-12e015cf5920" xlink:actuate="onRequest" xlink:href="psysml:d1856ead-47d8-4a4f-923f-12e015cf5920" xlink:show="new" xlink:title="psysml:d1856ead-47d8-4a4f-923f-12e015cf5920" xlink:type="simple"><path d="M441,206.4609 C441,206.6054 441,206.7498 441,206.8941 C441,207.1827 441,207.4708 441,207.7585 C441,208.9091 441,210.0524 441,211.1858 C441,213.4527 441,215.6804 441,217.8505 C441,222.1906 441,226.3 441,230.03 " fill="none" id="E2-E4" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[1b7591eae5389033d8d09a9d6721a717]
+link E4 to E5--><g id="link_E4_E5"><a href="psysml:fbc47cfc-7919-4d5c-9738-4f6fc575fe1f" target="_top" title="psysml:fbc47cfc-7919-4d5c-9738-4f6fc575fe1f" xlink:actuate="onRequest" xlink:href="psysml:fbc47cfc-7919-4d5c-9738-4f6fc575fe1f" xlink:show="new" xlink:title="psysml:fbc47cfc-7919-4d5c-9738-4f6fc575fe1f" xlink:type="simple"><path d="M441,270.8 C441,274.5063 441,278.5842 441,282.8895 C441,285.0422 441,287.2517 441,289.5 C441,290.6241 441,291.7579 441,292.8992 C441,293.1845 441,293.4703 441,293.7565 C441,293.8996 441,294.0429 441,294.1862 " fill="none" id="E4-E5" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[d1c41c8d5bc2693e99768999e620dfa1]
+link E5 to E9--><g id="link_E5_E9"><a href="psysml:b2b0e9b0-e42c-45b0-9f39-3b8c8397bd0d" target="_top" title="psysml:b2b0e9b0-e42c-45b0-9f39-3b8c8397bd0d" xlink:actuate="onRequest" xlink:href="psysml:b2b0e9b0-e42c-45b0-9f39-3b8c8397bd0d" xlink:show="new" xlink:title="psysml:b2b0e9b0-e42c-45b0-9f39-3b8c8397bd0d" xlink:type="simple"><path d="M449.253,361.2787 C449.3464,361.3005 449.4406,361.3224 449.5355,361.3446 C449.7253,361.3888 449.9179,361.4337 450.1133,361.4792 C450.5042,361.5703 450.9063,361.664 451.3195,361.7603 C452.1458,361.9529 453.0161,362.1557 453.9284,362.3683 C461.2269,364.0691 471.2113,366.3956 482.8225,369.1013 C506.045,374.5125 535.775,381.44 563.54,387.91 " fill="none" id="E5-E9" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[d096bcfdd838c2d34c9b88b431f52caf]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+top to bottom direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<settings> Настройки: Экран" as E1 [[psysml:8f5abc9a-d11e-4d36-88bb-caba27314d4b ]] {
+
+rec usage "<theme> Тема: Выбор" as E2 [[psysml:0d700020-87de-4b29-b9fc-d7642110de11 ]] {
+
+comp usage "варианты  " as E3  <<(T,blue) attribute>> [[psysml:a913786d-ccd4-4859-ae62-4c0e4c166967 ]] {
+
+##//values//##
+
+ <U+003D> ("Как в системе", "Светлая", "Тёмная")
+
+}
+
+}
+
+rec usage "<currency> Общая валюта: Выбор" as E4 [[psysml:30dd43ea-9a74-448e-bd82-bc9f315e3d7e ]] {
+
+}
+
+rec usage "<budget> Бюджет: Группа" as E5 [[psysml:e0c2c24b-df45-4717-8da7-55af1c6af23c ]] {
+
+rec usage "<month> Месяц лимита: Дата" as E6 [[psysml:49cd8f19-fe8e-44d7-95b8-052915a2f9a7 ]] {
+
+}
+
+rec usage "<amount> Сумма лимита, 0 без лимита: Поле ввода" as E7 [[psysml:760323bc-749c-4184-8470-1951e37077b7 ]] {
+
+}
+
+rec usage "<save> Сохранить бюджет: Панель" as E8 [[psysml:2f475562-38c9-4338-a867-1f12bc97fc2b ]] {
+
+}
+
+}
+
+rec usage "<cards> Управление банковскими картами: Список" as E9 [[psysml:88003b02-db9f-48e5-99ad-c75498a38744 ]] {
+
+}
+
+}
+
+E6 -[thickness=3]- E7 [[psysml:11fc4594-6366-48b8-aaf2-ba9af5311bc8 ]]
+
+E7 -[thickness=3]- E8 [[psysml:d7ecbfce-55c2-40df-9b8e-86011cefafde ]]
+
+E2 -[thickness=3]- E4 [[psysml:d1856ead-47d8-4a4f-923f-12e015cf5920 ]]
+
+E4 -[thickness=3]- E5 [[psysml:fbc47cfc-7919-4d5c-9738-4f6fc575fe1f ]]
+
+E5 -[thickness=3]- E9 [[psysml:b2b0e9b0-e42c-45b0-9f39-3b8c8397bd0d ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

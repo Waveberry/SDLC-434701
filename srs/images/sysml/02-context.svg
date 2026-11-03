@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="330px" preserveAspectRatio="none" style="width:816px;height:330px;background:#FFFFFF;" version="1.1" viewBox="0 0 816 330" width="816px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:cae13d01-7e8b-4df2-8f8f-f067957f225e" target="_top" title="psysml:cae13d01-7e8b-4df2-8f8f-f067957f225e" xlink:actuate="onRequest" xlink:href="psysml:cae13d01-7e8b-4df2-8f8f-f067957f225e" xlink:show="new" xlink:title="psysml:cae13d01-7e8b-4df2-8f8f-f067957f225e" xlink:type="simple"><rect fill="#FFFFFF" height="317" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="802" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="327" y="26.5332">&lt;context&gt; Контекст Cheq</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="809" y1="34.6094" y2="34.6094"/></a></g><g><a href="psysml:485db125-3d3a-4a4a-a84b-6a3c49264beb" target="_top" title="psysml:485db125-3d3a-4a4a-a84b-6a3c49264beb" xlink:actuate="onRequest" xlink:href="psysml:485db125-3d3a-4a4a-a84b-6a3c49264beb" xlink:show="new" xlink:title="psysml:485db125-3d3a-4a4a-a84b-6a3c49264beb" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="226" x="59" y="231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="64.5" y="250.5332">&lt;user&gt; Владелец: Пользователь</text></a></g><g><a href="psysml:dc2527a8-496b-4b83-9432-775cdaafa44f" target="_top" title="psysml:dc2527a8-496b-4b83-9432-775cdaafa44f" xlink:actuate="onRequest" xlink:href="psysml:dc2527a8-496b-4b83-9432-775cdaafa44f" xlink:show="new" xlink:title="psysml:dc2527a8-496b-4b83-9432-775cdaafa44f" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E3" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="179" x="331" y="156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="336.5" y="175.5332">&lt;app&gt; Cheq: Приложение</text></a></g><g><a href="psysml:3c109b99-1f5d-4c09-93e6-352371c8b5bd" target="_top" title="psysml:3c109b99-1f5d-4c09-93e6-352371c8b5bd" xlink:actuate="onRequest" xlink:href="psysml:3c109b99-1f5d-4c09-93e6-352371c8b5bd" xlink:show="new" xlink:title="psysml:3c109b99-1f5d-4c09-93e6-352371c8b5bd" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E4" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="298" x="23" y="156"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="287" x="28.5" y="175.5332">&lt;camera&gt; Камера / фото: Средство Android</text></a></g><g><a href="psysml:d623729d-c732-44e9-a5ee-a649493b1edb" target="_top" title="psysml:d623729d-c732-44e9-a5ee-a649493b1edb" xlink:actuate="onRequest" xlink:href="psysml:d623729d-c732-44e9-a5ee-a649493b1edb" xlink:show="new" xlink:title="psysml:d623729d-c732-44e9-a5ee-a649493b1edb" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="206" x="553.5" y="268"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="559" y="287.5332">&lt;groq&gt; Groq / Worker: Сервис</text></a></g><g><a href="psysml:cd7d6b53-221b-4aa2-a14f-ccdc67a529e0" target="_top" title="psysml:cd7d6b53-221b-4aa2-a14f-ccdc67a529e0" xlink:actuate="onRequest" xlink:href="psysml:cd7d6b53-221b-4aa2-a14f-ccdc67a529e0" xlink:show="new" xlink:title="psysml:cd7d6b53-221b-4aa2-a14f-ccdc67a529e0" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E6" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="155" x="94.5" y="81"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="100" y="100.5332">&lt;rates&gt; НБРБ: Сервис</text></a></g><g><a href="psysml:6b132fd7-6bce-400c-8680-f563f16eda78" target="_top" title="psysml:6b132fd7-6bce-400c-8680-f563f16eda78" xlink:actuate="onRequest" xlink:href="psysml:6b132fd7-6bce-400c-8680-f563f16eda78" xlink:show="new" xlink:title="psysml:6b132fd7-6bce-400c-8680-f563f16eda78" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E7" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="208" x="552.5" y="193"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="558" y="212.5332">&lt;db&gt; База SQLite: Хранилище</text></a></g><g><a href="psysml:74cbbbaf-a31f-4aca-b33f-c381ecfbadaa" target="_top" title="psysml:74cbbbaf-a31f-4aca-b33f-c381ecfbadaa" xlink:actuate="onRequest" xlink:href="psysml:74cbbbaf-a31f-4aca-b33f-c381ecfbadaa" xlink:show="new" xlink:title="psysml:74cbbbaf-a31f-4aca-b33f-c381ecfbadaa" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E8" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="273" x="520" y="118"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="525.5" y="137.5332">&lt;pending&gt; Очередь и фото: Хранилище</text></a></g><g><a href="psysml:cb05201e-07db-48ee-a684-2fc22ae9142c" target="_top" title="psysml:cb05201e-07db-48ee-a684-2fc22ae9142c" xlink:actuate="onRequest" xlink:href="psysml:cb05201e-07db-48ee-a684-2fc22ae9142c" xlink:show="new" xlink:title="psysml:cb05201e-07db-48ee-a684-2fc22ae9142c" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E9" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="235" x="539" y="43"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="544.5" y="62.5332">&lt;export&gt; TXT-экспорт: Хранилище</text></a></g><!--MD5=[2720a5a1f2c3fca2055b230370638851]
+link E2 to E3--><g id="link_E2_E3"><a href="psysml:2922d66c-da00-489d-9b57-ac72c5e35c28" target="_top" title="psysml:2922d66c-da00-489d-9b57-ac72c5e35c28" xlink:actuate="onRequest" xlink:href="psysml:2922d66c-da00-489d-9b57-ac72c5e35c28" xlink:show="new" xlink:title="psysml:2922d66c-da00-489d-9b57-ac72c5e35c28" xlink:type="simple"><path d="M262.33,230.56 C281.79,225.58 302.19,219.96 321,214 C337.16,208.88 354.51,202.5 370.07,196.44 " fill="none" id="E2-E3" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[f0cdf4548168e5211fb3a02bf679d63a]
+link E4 to E3--><g id="link_E4_E3"><a href="psysml:cfd18330-8d7c-499a-b1a9-5f2acb78db56" target="_top" title="psysml:cfd18330-8d7c-499a-b1a9-5f2acb78db56" xlink:actuate="onRequest" xlink:href="psysml:cfd18330-8d7c-499a-b1a9-5f2acb78db56" xlink:show="new" xlink:title="psysml:cfd18330-8d7c-499a-b1a9-5f2acb78db56" xlink:type="simple"><path d="M321.37,176 C324.53,176 327.67,176 330.77,176 " fill="none" id="E4-E3" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[0188b64bb0ae78505a997a81836e11e9]
+link E3 to E5--><g id="link_E3_E5"><a href="psysml:c5a95cd6-d43b-40fd-a2fb-679a8d0e6a18" target="_top" title="psysml:c5a95cd6-d43b-40fd-a2fb-679a8d0e6a18" xlink:actuate="onRequest" xlink:href="psysml:c5a95cd6-d43b-40fd-a2fb-679a8d0e6a18" xlink:show="new" xlink:title="psysml:c5a95cd6-d43b-40fd-a2fb-679a8d0e6a18" xlink:type="simple"><path d="M442.93,196.25 C461.86,213.12 490.9,236.63 520,251 C533.12,257.48 547.53,262.95 561.91,267.54 " fill="none" id="E3-E5" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[a717450b82c80b9240a525fa862496af]
+link E6 to E3--><g id="link_E6_E3"><a href="psysml:cfd1b560-8654-4f7b-9325-df144a93f09c" target="_top" title="psysml:cfd1b560-8654-4f7b-9325-df144a93f09c" xlink:actuate="onRequest" xlink:href="psysml:cfd1b560-8654-4f7b-9325-df144a93f09c" xlink:show="new" xlink:title="psysml:cfd1b560-8654-4f7b-9325-df144a93f09c" xlink:type="simple"><path d="M249.94,118.33 C272.96,124.02 298.15,130.77 321,138 C337.16,143.12 354.51,149.5 370.07,155.56 " fill="none" id="E6-E3" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[4931de25dcb70cd4585e7722db9b3a49]
+link E3 to E7--><g id="link_E3_E7"><a href="psysml:1860fef3-b1b0-433b-b18d-e45bc7c2ccd7" target="_top" title="psysml:1860fef3-b1b0-433b-b18d-e45bc7c2ccd7" xlink:actuate="onRequest" xlink:href="psysml:1860fef3-b1b0-433b-b18d-e45bc7c2ccd7" xlink:show="new" xlink:title="psysml:1860fef3-b1b0-433b-b18d-e45bc7c2ccd7" xlink:type="simple"><path d="M510.3,190.04 C524,192.21 538.26,194.46 552.25,196.67 " fill="none" id="E3-E7" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[ca5a752d6098d8a44b3f88316e7452d1]
+link E3 to E8--><g id="link_E3_E8"><a href="psysml:9d570411-edec-4fad-8eaa-cf9651f09dd9" target="_top" title="psysml:9d570411-edec-4fad-8eaa-cf9651f09dd9" xlink:actuate="onRequest" xlink:href="psysml:9d570411-edec-4fad-8eaa-cf9651f09dd9" xlink:show="new" xlink:title="psysml:9d570411-edec-4fad-8eaa-cf9651f09dd9" xlink:type="simple"><path d="M510.3,161.58 C516.63,160.55 523.09,159.5 529.58,158.45 " fill="none" id="E3-E8" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[4d85781121edfdebc5d1f98e72c75362]
+link E3 to E9--><g id="link_E3_E9"><a href="psysml:5206172f-6f9f-482a-b53c-56ac041e74cb" target="_top" title="psysml:5206172f-6f9f-482a-b53c-56ac041e74cb" xlink:actuate="onRequest" xlink:href="psysml:5206172f-6f9f-482a-b53c-56ac041e74cb" xlink:show="new" xlink:title="psysml:5206172f-6f9f-482a-b53c-56ac041e74cb" xlink:type="simple"><path d="M442.51,155.81 C461.39,138.68 490.61,114.63 520,100 C533.1,93.48 547.5,87.98 561.87,83.39 " fill="none" id="E3-E9" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[774fd5481f26963746750fa7d8b5b618]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+left to right direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<context> Контекст Cheq" as E1 [[psysml:cae13d01-7e8b-4df2-8f8f-f067957f225e ]] {
+
+rec usage "<user> Владелец: Пользователь" as E2 [[psysml:485db125-3d3a-4a4a-a84b-6a3c49264beb ]] {
+
+}
+
+rec usage "<app> Cheq: Приложение" as E3 [[psysml:dc2527a8-496b-4b83-9432-775cdaafa44f ]] {
+
+}
+
+rec usage "<camera> Камера / фото: Средство Android" as E4 [[psysml:3c109b99-1f5d-4c09-93e6-352371c8b5bd ]] {
+
+}
+
+rec usage "<groq> Groq / Worker: Сервис" as E5 [[psysml:d623729d-c732-44e9-a5ee-a649493b1edb ]] {
+
+}
+
+rec usage "<rates> НБРБ: Сервис" as E6 [[psysml:cd7d6b53-221b-4aa2-a14f-ccdc67a529e0 ]] {
+
+}
+
+rec usage "<db> База SQLite: Хранилище" as E7 [[psysml:6b132fd7-6bce-400c-8680-f563f16eda78 ]] {
+
+}
+
+rec usage "<pending> Очередь и фото: Хранилище" as E8 [[psysml:74cbbbaf-a31f-4aca-b33f-c381ecfbadaa ]] {
+
+}
+
+rec usage "<export> TXT-экспорт: Хранилище" as E9 [[psysml:cb05201e-07db-48ee-a684-2fc22ae9142c ]] {
+
+}
+
+}
+
+E2 -[thickness=3]- E3 [[psysml:2922d66c-da00-489d-9b57-ac72c5e35c28 ]]
+
+E4 -[thickness=3]- E3 [[psysml:cfd18330-8d7c-499a-b1a9-5f2acb78db56 ]]
+
+E3 -[thickness=3]- E5 [[psysml:c5a95cd6-d43b-40fd-a2fb-679a8d0e6a18 ]]
+
+E6 -[thickness=3]- E3 [[psysml:cfd1b560-8654-4f7b-9325-df144a93f09c ]]
+
+E3 -[thickness=3]- E7 [[psysml:1860fef3-b1b0-433b-b18d-e45bc7c2ccd7 ]]
+
+E3 -[thickness=3]- E8 [[psysml:9d570411-edec-4fad-8eaa-cf9651f09dd9 ]]
+
+E3 -[thickness=3]- E9 [[psysml:5206172f-6f9f-482a-b53c-56ac041e74cb ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="305px" preserveAspectRatio="none" style="width:426px;height:305px;background:#FFFFFF;" version="1.1" viewBox="0 0 426 305" width="426px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><a href="psysml:55aad770-a8b9-43b2-a163-3901945017b9" target="_top" title="psysml:55aad770-a8b9-43b2-a163-3901945017b9" xlink:actuate="onRequest" xlink:href="psysml:55aad770-a8b9-43b2-a163-3901945017b9" xlink:show="new" xlink:title="psysml:55aad770-a8b9-43b2-a163-3901945017b9" xlink:type="simple"><rect fill="#FFFFFF" height="292" id="E1" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="412" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="121" y="26.5332">&lt;expenses&gt; Расходы: Экран</text><line style="stroke:#383838;stroke-width:1.0;" x1="7" x2="419" y1="34.6094" y2="34.6094"/></a></g><g><a href="psysml:1feb2ee5-de9a-4f43-ab51-da97b00e0522" target="_top" title="psysml:1feb2ee5-de9a-4f43-ab51-da97b00e0522" xlink:actuate="onRequest" xlink:href="psysml:1feb2ee5-de9a-4f43-ab51-da97b00e0522" xlink:show="new" xlink:title="psysml:1feb2ee5-de9a-4f43-ab51-da97b00e0522" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E2" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="233" x="96.5" y="43"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="102" y="62.5332">&lt;month&gt; Выбранный месяц: Дата</text></a></g><g><a href="psysml:cfcb9524-9338-40b4-bbb7-05af062f6c7e" target="_top" title="psysml:cfcb9524-9338-40b4-bbb7-05af062f6c7e" xlink:actuate="onRequest" xlink:href="psysml:cfcb9524-9338-40b4-bbb7-05af062f6c7e" xlink:show="new" xlink:title="psysml:cfcb9524-9338-40b4-bbb7-05af062f6c7e" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E3" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="380" x="23" y="93"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="369" x="28.5" y="112.5332">&lt;summary&gt; Итог и признак неполных курсов: Индикатор</text></a></g><g><a href="psysml:fcc8889d-ae6b-4ec4-8d7f-f597dab07c26" target="_top" title="psysml:fcc8889d-ae6b-4ec4-8d7f-f597dab07c26" xlink:actuate="onRequest" xlink:href="psysml:fcc8889d-ae6b-4ec4-8d7f-f597dab07c26" xlink:show="new" xlink:title="psysml:fcc8889d-ae6b-4ec4-8d7f-f597dab07c26" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E4" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="371" x="27.5" y="143"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="360" x="33" y="162.5332">&lt;budget&gt; Лимит, остаток или превышение: Индикатор</text></a></g><g><a href="psysml:2ad6511a-6bde-4bb5-a9b8-3e66fbc34946" target="_top" title="psysml:2ad6511a-6bde-4bb5-a9b8-3e66fbc34946" xlink:actuate="onRequest" xlink:href="psysml:2ad6511a-6bde-4bb5-a9b8-3e66fbc34946" xlink:show="new" xlink:title="psysml:2ad6511a-6bde-4bb5-a9b8-3e66fbc34946" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E5" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="308" x="59" y="193"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="297" x="64.5" y="212.5332">&lt;categories&gt; Расходы по категориям: Список</text></a></g><g><a href="psysml:f83ddc3a-dd2b-405f-bcd2-8e5da148681c" target="_top" title="psysml:f83ddc3a-dd2b-405f-bcd2-8e5da148681c" xlink:actuate="onRequest" xlink:href="psysml:f83ddc3a-dd2b-405f-bcd2-8e5da148681c" xlink:show="new" xlink:title="psysml:f83ddc3a-dd2b-405f-bcd2-8e5da148681c" xlink:type="simple"><rect fill="#FFFFFF" height="40" id="E6" rx="10" ry="10" style="stroke:#383838;stroke-width:1.5;" width="271" x="77.5" y="243"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="83" y="262.5332">&lt;cards&gt; По картам и Без карты: Список</text></a></g><!--MD5=[2720a5a1f2c3fca2055b230370638851]
+link E2 to E3--><g id="link_E2_E3"><a href="psysml:2707b19d-4a1a-4925-aef0-03d4e4222e31" target="_top" title="psysml:2707b19d-4a1a-4925-aef0-03d4e4222e31" xlink:actuate="onRequest" xlink:href="psysml:2707b19d-4a1a-4925-aef0-03d4e4222e31" xlink:show="new" xlink:title="psysml:2707b19d-4a1a-4925-aef0-03d4e4222e31" xlink:type="simple"><path d="M213,83.25 C213,86.38 213,89.62 213,92.75 " fill="none" id="E2-E3" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[af87c684e3b0d8be13c1a698a818ef1e]
+link E3 to E4--><g id="link_E3_E4"><a href="psysml:9451289a-79d9-40fa-bbeb-278b6f235ea8" target="_top" title="psysml:9451289a-79d9-40fa-bbeb-278b6f235ea8" xlink:actuate="onRequest" xlink:href="psysml:9451289a-79d9-40fa-bbeb-278b6f235ea8" xlink:show="new" xlink:title="psysml:9451289a-79d9-40fa-bbeb-278b6f235ea8" xlink:type="simple"><path d="M213,133.25 C213,136.38 213,139.62 213,142.75 " fill="none" id="E3-E4" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[1b7591eae5389033d8d09a9d6721a717]
+link E4 to E5--><g id="link_E4_E5"><a href="psysml:db99ace4-9d1b-4258-8a9f-60d4d2d4f3e0" target="_top" title="psysml:db99ace4-9d1b-4258-8a9f-60d4d2d4f3e0" xlink:actuate="onRequest" xlink:href="psysml:db99ace4-9d1b-4258-8a9f-60d4d2d4f3e0" xlink:show="new" xlink:title="psysml:db99ace4-9d1b-4258-8a9f-60d4d2d4f3e0" xlink:type="simple"><path d="M213,183.25 C213,186.38 213,189.62 213,192.75 " fill="none" id="E4-E5" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[9120cf2e5df3bff93db8f754bbbc09b4]
+link E5 to E6--><g id="link_E5_E6"><a href="psysml:2ce8b9a5-05ca-46fa-a7be-ebf87fd9f612" target="_top" title="psysml:2ce8b9a5-05ca-46fa-a7be-ebf87fd9f612" xlink:actuate="onRequest" xlink:href="psysml:2ce8b9a5-05ca-46fa-a7be-ebf87fd9f612" xlink:show="new" xlink:title="psysml:2ce8b9a5-05ca-46fa-a7be-ebf87fd9f612" xlink:type="simple"><path d="M213,233.25 C213,236.38 213,239.62 213,242.75 " fill="none" id="E5-E6" style="stroke:#181818;stroke-width:3.0;"/></a></g><!--MD5=[d8cf43b92e5dd8260650d3ea7516fff7]
+@startuml
+
+skin sysmlbw
+
+skinparam monochrome true
+
+skinparam wrapWidth 300
+
+hide circle
+
+top to bottom direction
+
+skinparam ranksep 10
+
+skinparam rectangle {
+
+ backgroundColor<<block>> LightGreen
+
+}
+
+
+
+rec usage "<expenses> Расходы: Экран" as E1 [[psysml:55aad770-a8b9-43b2-a163-3901945017b9 ]] {
+
+rec usage "<month> Выбранный месяц: Дата" as E2 [[psysml:1feb2ee5-de9a-4f43-ab51-da97b00e0522 ]] {
+
+}
+
+rec usage "<summary> Итог и признак неполных курсов: Индикатор" as E3 [[psysml:cfcb9524-9338-40b4-bbb7-05af062f6c7e ]] {
+
+}
+
+rec usage "<budget> Лимит, остаток или превышение: Индикатор" as E4 [[psysml:fcc8889d-ae6b-4ec4-8d7f-f597dab07c26 ]] {
+
+}
+
+rec usage "<categories> Расходы по категориям: Список" as E5 [[psysml:2ad6511a-6bde-4bb5-a9b8-3e66fbc34946 ]] {
+
+}
+
+rec usage "<cards> По картам и Без карты: Список" as E6 [[psysml:f83ddc3a-dd2b-405f-bcd2-8e5da148681c ]] {
+
+}
+
+}
+
+E2 -[thickness=3]- E3 [[psysml:2707b19d-4a1a-4925-aef0-03d4e4222e31 ]]
+
+E3 -[thickness=3]- E4 [[psysml:9451289a-79d9-40fa-bbeb-278b6f235ea8 ]]
+
+E4 -[thickness=3]- E5 [[psysml:db99ace4-9d1b-4258-8a9f-60d4d2d4f3e0 ]]
+
+E5 -[thickness=3]- E6 [[psysml:2ce8b9a5-05ca-46fa-a7be-ebf87fd9f612 ]]
+
+@enduml
+
+
+PlantUML version 1.2022.7(Mon Aug 22 20:01:30 MSK 2022)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg>
