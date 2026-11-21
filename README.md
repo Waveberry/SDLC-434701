@@ -17,6 +17,7 @@
   - [Первичный план v1](sdd/plan-v1.md) · [Изменённый план v2](sdd/plan-v2.md) · [Согласованный план v3](sdd/plan-v3.md)
   - [Журнал переписки и согласования (PR #3)](sdd/negotiations.md)
   - [Архитектурные и плановые диаграммы](sdd/diagrams)
+  - [Отчёт по лабораторной работе № 4](sdd/lab4.docx)
 - `adr/` — шаблоны MADR 4.0 и протоколы архитектурных решений (**лабораторная работа № 4**):
   - [ADR-0001 — Выделение чистого Java-модуля `:core`](adr/0001-separate-pure-java-core-module.md)
   - [ADR-0002 — Две изолированные SQLite БД с WAL и идемпотентным сохранением](adr/0002-dual-sqlite-databases-with-wal-and-idempotent-save.md)
