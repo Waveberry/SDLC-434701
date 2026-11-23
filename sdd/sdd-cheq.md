@@ -2,13 +2,13 @@
 
 Для Android-приложения **Cheq**
 
-Версия документа 0.3 · Целевая версия приложения 1.0 (`versionCode 11`, согласованный состав v3)
+Версия документа 0.4 · Целевая версия приложения 1.0 (`versionCode 11`, согласованный состав v3)
 
 Подготовил: А. В. Голуб, группа 434701
 
 БГУИР, ФКСиС, кафедра ЭВМ
 
-21.11.2026
+23.11.2026
 
 ## Оглавление
 
@@ -27,6 +27,7 @@
   * [3.2 Приоритизация функционала (шкала 10–50) и первичный план](#32-feature-prioritization)
   * [3.3 Проектные представления (Design Views DV-01 — DV-12)](#33-views)
   * [3.4 Матрица трассируемости](#34-traceability-matrix)
+  * [3.5 Модель динамического поведения системы (UML 2.5)](#35-uml-dynamic-behavior)
 * [4. Решения (ADR)](#4-decisions)
 * [5. Приложения](#5-appendixes)
 <!-- TOC -->
@@ -38,6 +39,7 @@
 | А. В. Голуб | 21.11.2026 | Первичная версия SDD на основе SRS v1.2 и исходников Cheq 1.0: системные требования, 12 проектных представлений, ADR-0001..0007, приоритеты 10–50 и базовый план v1 | 0.1 |
 | А. В. Голуб | 21.11.2026 | Итоги Раунда 1 с Заказчиком (`@vlad200712`, PR #3): отказ от Cloudflare Worker (`ADR-0004` → `accepted`), пересмотр приоритетов 10–50, оптимизация до 5 итераций / 10 недель ([План v2](plan-v2.md)) | 0.2 |
 | А. В. Голуб | 21.11.2026 | Итоги Раунда 2 (PR #3): отказ от переключателя тем (`F-13`), добавлены `SYS-FUNC-015` (бэкап JSON/ZIP SAF) и `SYS-FUNC-016` (шаблоны покупок, миграция БД v6), привлечён Junior-разработчик на Итер. 4–5 (`ADR-0008`, [План v3](plan-v3.md)) | 0.3 |
+| А. В. Голуб | 23.11.2026 | ЛР № 5: добавлена модель динамического поведения UML 2.5 (`uml/glossary.md`, `uml/supplementary-specifications.md`, `uml/use-case-specifications.md`, 6 диаграмм PlantUML), `ADR-0009` и реализация `F-15`/`F-16` (`BackupCodec`, `receiptbox.db` v6) | 0.4 |
 
 ---
 
@@ -91,12 +93,14 @@
 | 6 | Исходный код проекта Cheq 1.0 (`:app`, `:core`, `scripts/`) | v1.0 (`versionCode 11`) | Локальный проект `Cheq` (`com.waveberry.cheq`) | Справочная |
 | 7 | Документация официального API курсов валют НБРБ | Актуальная | https://www.nbrb.by/apihelp/exrates | Справочная |
 | 8 | Документация Groq API (Structured Outputs / JSON Schema) | Актуальная | https://console.groq.com/docs/structured-outputs | Справочная |
+| 9 | Задание лабораторной работы № 5 «Моделирование динамического поведения системы на языке UML» | БГУИР, 2026 | Материалы курса ЖЦРПО | Нормативная |
+| 10 | Глоссарий, дополнительные спецификации и потоки событий прецедентов Cheq | v1.1, 23.11.2026 | [uml/glossary.md](../uml/glossary.md), [uml/supplementary-specifications.md](../uml/supplementary-specifications.md), [uml/use-case-specifications.md](../uml/use-case-specifications.md) | Нормативная |
 
 ### 1.5 Обзор документа {#15-document-overview}
 
-Раздел 2 определяет стейкхолдеров, их интересы (Concerns) и выбранный набор точек зрения (Viewpoints) по стандарту ISO/IEC/IEEE 42010. Раздел 3 содержит реестр функциональных и нефункциональных системных требований (`SYS-FUNC-*`, `SYS-NFR-*`), таблицу приоритизации функционала (10–50), двенадцать детальных проектных представлений (`DV-01` — `DV-12`) с диаграммами и сквозную матрицу трассируемости. Раздел 4 сводит принятые и предлагаемые архитектурные решения (`ADR-0001` — `ADR-0007`), вынесенные в отдельные файлы каталога `adr/`. Раздел 5 ссылается на итерационный план реализации и тестовое покрытие.
+Раздел 2 определяет стейкхолдеров, их интересы (Concerns) и выбранный набор точек зрения (Viewpoints) по стандарту ISO/IEC/IEEE 42010. Раздел 3 содержит реестр функциональных и нефункциональных системных требований (`SYS-FUNC-*`, `SYS-NFR-*`), таблицу приоритизации функционала (10–50), двенадцать детальных проектных представлений (`DV-01` — `DV-12`), сквозную матрицу трассируемости и раздел `3.5` с моделью динамического поведения на языке UML 2.5. Раздел 4 сводит принятые архитектурные решения (`ADR-0001` — `ADR-0009`), вынесенные в отдельные файлы каталога `adr/`. Раздел 5 ссылается на итерационный план реализации, UML-артефакты и тестовое покрытие.
 
-Документ поддерживается в актуальном состоянии в ветке `lab4-cheq-design`: каждое согласованное с заказчиком изменение объёма, приоритетов или архитектуры отражается в таблице истории изменений, затрагиваемых `DV-*` и отдельном ADR.
+Документ поддерживается в актуальном состоянии в ветках `lab4-cheq-design` и `lab5-uml-modeling`: каждое согласованное изменение объёма, приоритетов, архитектуры или UML-моделей отражается в таблице истории изменений, затрагиваемых `DV-*` и отдельном ADR.
 
 ---
 
@@ -122,7 +126,7 @@
 | 2 | **Composition** (Композиция) | `DV-02` | UML Component / Package Diagram | Декомпозиция на модули `:app` и `:core`, распределение ответственности пакетов |
 | 3 | **Logical** (Логическое представление) | `DV-03` | UML Class Diagram | Доменные типы, репозитории, `ViewModel`, сервисы и интерфейсы |
 | 4 | **Dependency** (Зависимости) | `DV-04` | Граф зависимостей модулей и библиотек | Однонаправленная зависимость `:app → :core`, версии библиотек, анализ влияния изменений |
-| 5 | **Information** (Информация) | `DV-05` | ER-диаграмма SQLite + файловая схема | Схема `receiptbox.db` v5, `pending_receipts.db` v1, миграции, ссылочная целостность |
+| 5 | **Information** (Информация) | `DV-05` | ER-диаграмма SQLite + файловая схема | Схема `receiptbox.db` v6, `pending_receipts.db` v1, миграции, ссылочная целостность |
 | 6 | **Interface** (Интерфейс) | `DV-06` | Спецификации REST/JSON Schema и Java-интерфейсов | Контракты Groq API, НБРБ ExRates API, `FileProvider` TXT, внутренние интерфейсы |
 | 7 | **Interaction** (Взаимодействие) | `DV-07` | UML Sequence Diagram | Сквозной сценарий импорта чека, офлайн-ветка и обработка ошибок сервиса |
 | 8 | **Algorithm** (Алгоритм) | `DV-08` | Формулы и алгоритмические спецификации | Слияние `OcrTextMerger`, полосовой тайлинг, кросс-курс `HistoricalRate`, `ReceiptArithmetic` |
@@ -144,7 +148,7 @@
 | ID | Название | Инженерная спецификация системного требования | Связанные `REQ-*` | Модуль / Класс |
 |---|---|---|---|---|
 | `SYS-FUNC-001` | Доменная модель и точная арифметика | Модуль `:core` должен представлять суммы в `long` (сотые доли, `0..100 000 000 000`), количества в `long` (тысячные доли, `1..1 000 000 000`), валидировать ≤ 200 позиций, ≤ 24 000 символов текста, даты с `2000-01-01` до `today+1y`, 6 валют и 11 категорий, а также проверять `|unit*qty - line| ≤ 1` и `|sum(lines) - total| ≤ 1` без автоматического выравнивания | `REQ-FUNC-001`, `REQ-FUNC-004`, `REQ-REUSE-001` | `:core`: `ReceiptDraft`, `ReceiptItem`, `Money`, `ReceiptArithmetic` |
-| `SYS-FUNC-002` | Персистентное хранилище и миграции | `ReceiptStore` должен управлять SQLite БД `receiptbox.db` (v5, WAL, `PRAGMA foreign_keys=ON`), выполнять запись покупки с позициями и маркером `completed_pending` в единой ACID-транзакции и поддерживать миграции с версий 1–4 до 5 без потери данных | `REQ-REL-001`, `REQ-REL-003`, `REQ-SEC-001` | `:app/data`: `ReceiptStore`, `ReceiptPhotos` |
+| `SYS-FUNC-002` | Персистентное хранилище и миграции | `ReceiptStore` должен управлять SQLite БД `receiptbox.db` (v6, WAL, `PRAGMA foreign_keys=ON`), выполнять запись покупки с позициями и маркером `completed_pending` в единой ACID-транзакции и поддерживать миграции с версий 1–5 до 6 без потери данных | `REQ-REL-001`, `REQ-REL-003`, `REQ-SEC-001` | `:app/data`: `ReceiptStore`, `ReceiptPhotos` |
 | `SYS-FUNC-003` | Редактор чека и сохранение черновика | `EditorActivity` + `EditorModel` должны обеспечивать ручной ввод, правку всех полей чека, показ предупреждений `ReceiptArithmetic.discrepancies()`, поддержку чеков без позиций (`totalMinor > 0`, `items = []`), сохранность при повороте экрана (`DraftCache`) и запрет автосохранения без действия пользователя | `REQ-INT-002`, `REQ-FUNC-001`, `REQ-FUNC-003..005`, `REQ-FUNC-021`, `REQ-ML-002` | `:app/ui`: `EditorActivity`, `EditorModel`, `EditorForm`, `DraftCache` |
 | `SYS-FUNC-004` | Навигация, архив и поиск | `MainActivity` должна предоставлять 4 раздела нижней навигации («Покупки», «Товары», «Расходы», «Настройки»), переключение карточек/списка, фильтрацию по магазину/товару/дате (`searchText`), сортировку и сохранение выбранных настроек в `AppPreferences` | `REQ-INT-001`, `REQ-FUNC-006`, `REQ-FUNC-007` | `:app/ui`: `MainActivity`, `ReceiptBrowser`, `AppPreferences` |
 | `SYS-FUNC-005` | Камера и гибридный локальный OCR | `CameraActivity` (CameraX) и системный выбор фото должны передавать URI в `OcrEngine`, который корректирует EXIF-ориентацию, режет длинные чеки на полосы (`OcrPreparation.bands`, ≤ 24 полосы), запускает ML Kit Latin + Tesseract `rus+eng` с фолбэком контраста и объединяет строки в `OcrTextMerger.merge()` | `REQ-INT-003`, `REQ-FUNC-002`, `REQ-ML-001`, `REQ-ML-003` | `:app/scan`: `CameraActivity`, `OcrEngine`, `OcrPreparation`; `:core`: `OcrTextMerger` |
@@ -157,8 +161,8 @@
 | `SYS-FUNC-012` | Выборочный UTF-8 TXT-экспорт | `SelectionSharing` должен формировать временный UTF-8 TXT в `cache/shares/` только из выбранных покупок или истории товаров (исключая `rawText`, фото и карточные поля), выдавать временный URI через `FileProvider` и удалять старые файлы экспорта старше 24 ч | `REQ-FUNC-019`, `REQ-SEC-001`, `REQ-SEC-002` | `:app/ui`: `SelectionSharing` |
 | `SYS-FUNC-013` | Системная тема и сборка поставки | Приложение должно следовать системной теме Android (ручной переключатель тем снят в Раунде 2), собираться Gradle Wrapper на JDK 17 в ARM64 APK (`arm64-v8a`, `minSdk 26`, R8 release) без обязательного `GroqApi.key` и содержать актуальный `THIRD_PARTY.md` | `REQ-FUNC-021`, `REQ-INST-001`, `REQ-BUILD-001`, `REQ-DIST-001`, `REQ-COMP-001`, `REQ-PORT-001` | `app/build.gradle`, `scripts/build.ps1`, `AppPreferences`, `THIRD_PARTY.md` |
 | `SYS-FUNC-014` | Автоматическая регрессия и корпус чеков | Проект должен включать модульные тесты `:core` (JUnit), интеграционные UI/БД тесты `:app` (Robolectric) и CLI-прогон синтетического корпуса `scripts/verify-receipt-corpus.ps1` для проверки обновлений модели, парсеров и бэкапа | `REQ-ML-003`, `REQ-POC-001`, `REQ-MAINT-001` | `core/src/test`, `app/src/test`, `scripts/verify-receipt-corpus.ps1` |
-| `SYS-FUNC-015` | Локальное резервное копирование и восстановление архива (CR-01, Раунд 2) | Система должна экспортировать и атомарно восстанавливать версионируемый JSON/ZIP-архив (покупки, позиции, карты, бюджеты, кэш курсов) через системный Android SAF (`ACTION_CREATE_DOCUMENT`/`ACTION_OPEN_DOCUMENT`) с валидацией схемы и защитой от дублей при `allowBackup=false` | `CR-01` (PR #3), `REQ-SEC-001`, `REQ-REL-001` | `:core`: `BackupCodec`; `:app/data`: `ReceiptStore` (v6); `:app/ui`: `SettingsPanel` (SAF) |
-| `SYS-FUNC-016` | Шаблоны регулярных покупок и дублирование чека (CR-02, Раунд 2) | Система должна хранить пользовательские шаблоны чеков в таблице `receipt_templates` (`receiptbox.db` v6) и предоставлять создание копии покупки или сохранение чека как шаблона в 1 клик с подстановкой текущей даты в редактор | `CR-02` (PR #3), `REQ-FUNC-001`, `REQ-FUNC-003` | `:app/data`: `ReceiptStore` (`receipt_templates`, v6); `:app/ui`: `EditorActivity`, `ReceiptBrowser` |
+| `SYS-FUNC-015` | Локальное резервное копирование и восстановление архива (CR-01, Раунд 2) | Система должна экспортировать и атомарно восстанавливать версионируемый JSON/ZIP-архив (покупки, позиции, карты, бюджеты, кэш курсов, шаблоны) через системный Android SAF (`ACTION_CREATE_DOCUMENT`/`ACTION_OPEN_DOCUMENT`) с пре-транзакционной валидацией схемы (`schemaVersion=6`, ≤ 10 МБ) и защитой от дублей при `allowBackup=false` | `CR-01` (PR #3), `REQ-SEC-001`, `REQ-REL-001` | `:core`: `BackupSnapshot`, `BackupCodec`; `:app/data`: `ReceiptStore` (v6); `:app/ui`: `SettingsPanel`, `MainActivity` |
+| `SYS-FUNC-016` | Шаблоны регулярных покупок и дублирование чека (CR-02, Раунд 2) | Система должна хранить пользовательские шаблоны чеков в таблице `receipt_templates` (`receiptbox.db` v6) и предоставлять сохранение чека как шаблона, создание покупки из шаблона и дублирование существующего чека в 1 клик с подстановкой текущей даты | `CR-02` (PR #3), `REQ-FUNC-001`, `REQ-FUNC-003` | `:app/data`: `ReceiptStore` (`receipt_templates`, v6); `:app/ui`: `EditorActivity`, `EditorModel`, `MainActivity` |
 
 #### 3.1.2 Нефункциональные системные требования (`SYS-NFR-*`, ISO/IEC 25010)
 
@@ -169,7 +173,7 @@
 | `SYS-NFR-003` | Security (Confidentiality & Integrity) | `allowBackup="false"`, `cleartextTrafficPermitted="false"`, `setInstanceFollowRedirects(false)`, запрет хранения `PAN`/`CVV`/срока действия карты на уровне схемы SQLite (`CHECK`), валидация имён фото `[A-Za-z0-9_-]+\.jpg`, отсутствие секретов и текстов чеков в диагностических логах | `REQ-SEC-001..003`, `REQ-DIST-001` |
 | `SYS-NFR-004` | Reliability (Fault tolerance & Recoverability) | Атомарность записи покупок (`beginTransaction/setTransactionSuccessful`), идемпотентность `savePending` через `completed_pending`, восстановление прерванных записей `processing → waiting` при старте (`PendingReceiptStore.recover()`), экспоненциальный backoff ошибок `min(60 с, 2 с << (failures-1))` | `REQ-REL-001..003`, `REQ-FUNC-020` |
 | `SYS-NFR-005` | Reliability (Availability / Offline-first) | 100% доступность ручного ввода, архива, истории цен, локального OCR и аналитики по кэшированным курсам без интернета; при отсутствии ключа или отказе Groq ручной учёт и сохранённая очередь не блокируются | `REQ-AVAIL-001`, `REQ-COST-001` |
-| `SYS-NFR-006` | Maintainability (Modularity & Testability) | Строгое разделение `:app → :core` без циклических зависимостей; 100% независимость `:core` от `android.*`; покрытие критичных правил 47 автоматическими тестовыми наборами (`18 :core` + `29 :app`) | `REQ-REUSE-001`, `REQ-MAINT-001` |
+| `SYS-NFR-006` | Maintainability (Modularity & Testability) | Строгое разделение `:app → :core` без циклических зависимостей; 100% независимость `:core` от `android.*`; покрытие критичных правил автоматическими тестовыми наборами (`19 :core` [149 тестов] + `31 :app`, вкл. бэкап и миграцию v6) | `REQ-REUSE-001`, `REQ-MAINT-001` |
 | `SYS-NFR-007` | Maintainability (Analysability / Observability) | Явное различение в UI шести состояний: локальный OCR, ожидание сети, обработка Groq, готовность к проверке, классифицированная ошибка сервиса (`GroqErrors`: 401/403/429/400/timeout/SSL/JSON/truncated), ожидание курса НБРБ | `REQ-OBS-001`, `REQ-REL-002` |
 | `SYS-NFR-008` | Compatibility & AI Safety | Резервирование OCR-движков (отказ ML Kit или Tesseract сохраняет результат второго); независимый пост-контроль LLM-вывода (`ReceiptExtraction.reconcile`, `ReceiptArithmetic`, `verifyCardLastFour`) и обязательное подтверждение человеком | `REQ-ML-001..003` |
 | `SYS-NFR-009` | Portability (Installability) | Поддержка Android 8.0–16 (API 26–36), `arm64-v8a`, необязательность аппаратной камеры (`required="false"`), повторяемая сборка Gradle 8.13 + JDK 17 | `REQ-INST-001`, `REQ-BUILD-001`, `REQ-PORT-001` |
@@ -232,7 +236,7 @@ Cheq работает как автономный локальный клиен�
 ![Композиция модулей и граф зависимостей Cheq](diagrams/02-component-composition.png)
 
 Система декомпозирована на два Gradle-модуля с однонаправленной зависимостью `:app → :core`:
-- **`:core` (`com.receiptbox.core`, 23 класса)** — доменная модель (`ReceiptDraft`, `ReceiptItem`), точные вычисления (`Money`, `ReceiptArithmetic`, `HistoricalRate`, `BudgetProgress`), разбор и верификация текста (`OcrTextMerger`, `ReceiptExtraction`, `BankReceiptParser`, `DigitalReceiptParser`, `ReceiptParser`, `ReceiptProfiles`, `ReceiptTotals`, `ReceiptDates`, `ReceiptJson`), сетевые клиенты и контракты (`GroqReceiptApi`, `GroqConnection`, `GroqErrors`, `NbrbRateClient`, интерфейсы `HistoricalRateSource` и `ReceiptRefinement.Cloud`).
+- **`:core` (`com.receiptbox.core`, 25 классов)** — доменная модель (`ReceiptDraft`, `ReceiptItem`, `BackupSnapshot`), точные вычисления (`Money`, `ReceiptArithmetic`, `HistoricalRate`, `BudgetProgress`), разбор и верификация текста (`OcrTextMerger`, `ReceiptExtraction`, `BankReceiptParser`, `DigitalReceiptParser`, `ReceiptParser`, `ReceiptProfiles`, `ReceiptTotals`, `ReceiptDates`, `ReceiptJson`, `BackupCodec`), сетевые клиенты и контракты (`GroqReceiptApi`, `GroqConnection`, `GroqErrors`, `NbrbRateClient`, интерфейсы `HistoricalRateSource` и `ReceiptRefinement.Cloud`).
 - **`:app` (`com.waveberry.cheq`, 35 классов)** — 4 прикладных пакета:
   - `.ui` (27 классов): активности (`MainActivity`, `EditorActivity`, `BaseActivity`), `EditorModel`, `RecognitionQueue`, браузеры (`ReceiptBrowser`, `ProductBrowser`), справочник карт (`CardManager`), настройки (`SettingsPanel`, `AppPreferences`), массовый выбор и экспорт (`SelectionModel`, `SelectionSharing`), `DraftCache`, адаптеры и UI-компоненты (`CapsuleNavigationView`, `FrostedSurface`, `MonthChooser`).
   - `.scan` (3 класса): `CameraActivity`, `OcrEngine`, `OcrPreparation`.
@@ -278,7 +282,7 @@ Cheq работает как автономный локальный клиен�
 | `:app` | `cz.adaptech.tesseract4android:tesseract4android` | `4.9.0` | Встроенный офлайн OCR LSTM (`rus+eng`) | Apache-2.0 |
 | `:app` | `androidx.appcompat`, `activity`, `fragment`, `lifecycle`, `recyclerview`, `exifinterface`, `material` | `1.7.1`..`2.9.1` | UI, `ViewModel`, EXIF-ориентация, Material 3 | Apache-2.0 |
 | `:app` | `com.android.tools:desugar_jdk_libs` | `2.1.5` | Поддержка `java.time.*` на Android API 26+ | GPL-2.0 w/ CE |
-| Test | `junit:junit` (`4.13.2`), `org.robolectric:robolectric` (`4.16`), `androidx.test:core` (`1.6.1`) | pinned | 18 JVM-тестов `:core` + 29 Android-тестов `:app` | EPL / MIT / Apache-2.0 |
+| Test | `junit:junit` (`4.13.2`), `org.robolectric:robolectric` (`4.16`), `androidx.test:core` (`1.6.1`) | pinned | 19 JVM-наборов `:core` (149 тестов) + 31 Android-набор `:app` | EPL / MIT / Apache-2.0 |
 
 Зависимость строго ациклическая: `:app/ui → :app/{data,scan,cloud} → :core → Gson`. Обратные зависимости из `:core` в `:app` запрещены компилятором.
 
@@ -288,7 +292,7 @@ Cheq работает как автономный локальный клиен�
 
 #### `[DV-05]` Информационное представление (схема БД и файлов) {#dv-05}
 - **ID**: `DV-05-information`
-- **Title**: Схема локальных БД (`receiptbox.db` v5 и `pending_receipts.db` v1) и файлового хранилища
+- **Title**: Схема локальных БД (`receiptbox.db` v6 и `pending_receipts.db` v1) и файлового хранилища
 - **Viewpoint**: Information
 - **Representation**:
 
@@ -299,7 +303,7 @@ Cheq работает как автономный локальный клиен�
 - **v2 → v3**: создание кэша курсов `exchange_rates(currency, purchase_date, scale, official_rate)` и индекса `receipts_purchase_date`.
 - **v3 → v4**: создание таблиц `bank_cards` (с `CHECK(length(last_four)=4)`) и `monthly_budgets`, добавление `receipts.card_id REFERENCES bank_cards(id) ON DELETE SET NULL` и индекса `receipts_card`.
 - **v4 → v5**: создание таблицы идемпотентности `completed_pending(pending_id INTEGER PRIMARY KEY, receipt_id INTEGER NOT NULL)`.
-- **v5 → v6 (согласовано в Раунде 2, ADR-0008)**: добавление таблицы `receipt_templates(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, merchant TEXT NOT NULL, currency TEXT NOT NULL, total_minor INTEGER NOT NULL, card_id INTEGER REFERENCES bank_cards(id) ON DELETE SET NULL, items_json TEXT NOT NULL)` для `SYS-FUNC-016` и версионируемой сериализации таблиц в JSON/ZIP-бэкап (`SYS-FUNC-015`).
+- **v5 → v6 (реализовано по ADR-0008)**: добавление таблицы `receipt_templates(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, merchant TEXT NOT NULL, currency TEXT NOT NULL, total_minor INTEGER NOT NULL, card_id INTEGER REFERENCES bank_cards(id) ON DELETE SET NULL, items_json TEXT NOT NULL)` с индексом `templates_title` для `SYS-FUNC-016`, а также экспорт/атомарное восстановление всех 6 сущностей в `BackupCodec` (`SYS-FUNC-015`).
 
 Правило ссылочной целостности фотографий: файл `files/receipts/receipt-<UUID>.jpg` удаляется только тогда, когда `ReceiptStore.imageReferenced(path) == false`, `PendingReceiptStore.imageReferenced(path) == false` и файл не указан в `DraftCache`.
 
@@ -318,7 +322,7 @@ Cheq работает как автономный локальный клиен�
 | **Groq Chat Completions** (`GroqConnection`) | `HTTPS POST https://api.groq.com/openai/v1/chat/completions`, `Bearer <key>`, `Content-Type: application/json`, редиректы отключены | JSON: `model="openai/gpt-oss-20b"`, `temperature=0`, `reasoning_effort="low"`, `response_format={type:"json_schema", strict:true}`, user payload `{text, defaultCurrency, defaultDate}` (≤ 24 000 симв.; **без фото и `cardId`**) | `finish_reason=="stop"`, JSON `purchase_receipt`: `{merchant, date, currency, totalMinor, cardLastFour, items:[{name, quantityMilli, unitMinor, lineMinor, category}]}`, ответ ≤ 256 КБ | `GroqHttpException` (400/401/403/429/5xx), `GroqResponseException` (`TRUNCATED`, `TOO_LARGE`, `NO_ITEMS`, `FORMAT`), `SocketTimeoutException` (55 с), `SSLException` |
 | **API НБРБ** (`NbrbRateClient`) | `HTTPS GET https://api.nbrb.by/exrates/rates?ondate={YYYY-MM-DD}&periodicity=0` + фолбэк `/{ISO}?parammode=2&ondate={YYYY-MM-DD}` | Дата `LocalDate`, множество 3-буквенных ISO-кодов (исключая `BYN`) | Массив/объект JSON с полями `Date`, `Cur_Abbreviation`, `Cur_Scale`, `Cur_OfficialRate`; строгая сверка `actualDate == expectedDate`, ответ ≤ 256 КБ | Таймаут `12 с` (connect/read `6 с`), `IOException` не ломает сохранение чека; отсутствующая котировка остаётся в ожидании |
 | **TXT Export** (`SelectionSharing`) | Android `FileProvider` (`com.waveberry.cheq.files`, `cache/shares/*.txt`), временный `FLAG_GRANT_READ_URI_PERMISSION` | Набор `receiptIds` или `productKeys` | UTF-8 текстовый файл с магазинами, датами, позициями и исходными валютами; **без `rawText`, фото и данных карт**; автоудаление файлов старше 24 ч | При сбое записи неполный временный файл удаляется в `finally` |
-| **Local Archive Backup (CR-01, v0.3)** (`BackupCodec` + SAF) | Android Storage Access Framework (`ACTION_CREATE_DOCUMENT` / `ACTION_OPEN_DOCUMENT`, JSON/ZIP) | Пользовательский URI файла резервной копии | Версионируемый JSON/ZIP (`schemaVersion=6`: чеки, позиции, карты, бюджеты, кэш курсов, шаблоны); атомарный импорт без дублей | Проверка контрольной версии и валидности JSON до открытия транзакции записи; при ошибке БД остаётся нетронутой |
+| **Local Archive Backup (CR-01, v0.4)** (`BackupCodec` + SAF) | Android Storage Access Framework (`ACTION_CREATE_DOCUMENT` / `ACTION_OPEN_DOCUMENT`, JSON/ZIP) | Пользовательский URI файла резервной копии (≤ `10 МБ`) | Версионируемый ZIP/JSON (`BackupSnapshot`, `schemaVersion=6`: карты, чеки, позиции, бюджеты, курсы, шаблоны); атомарный импорт без дублей | Проверка размера, `schemaVersion` и всех доменных ограничений до открытия транзакции записи; при ошибке БД остаётся нетронутой |
 | **`HistoricalRateSource`** | `List<HistoricalRate> fetch(LocalDate date, Set<String> currencies) throws IOException` | Дата покупки и список нужных валют | Список официальных котировок на указанную дату | Позволяет подменять НБРБ в тестах |
 | **`ReceiptRefinement.Cloud`** | `ReceiptDraft parse(ReceiptDraft input) throws Exception` | Черновик с `rawText`, `currency`, `date` | Заполненный черновик чека до пользовательского подтверждения | Позволяет тестировать `RecognitionQueue` и `EditorModel` без реального Groq |
 
@@ -466,13 +470,41 @@ Cheq работает как автономный локальный клиен�
 | `BG-03` | `REQ-INT-004`, `REQ-FUNC-009..014`, `REQ-FUNC-016` | `SYS-FUNC-008`, `009`, `010` | `F-08`, `F-09`, `F-10` | `DV-03`, `DV-05`, `DV-06`, `DV-08` | `ADR-0005`, `0006` | `HistoricalRate`, `NbrbRateClient`, `HistoricalRateRepository`, `BudgetProgress`, `CardManager`, `ReceiptStore` | `HistoricalRateTest`, `NbrbRateClientTest`, `BudgetProgressTest`, `HistoricalRatesStoreTest`, `CardSpendingStoreTest`, `MixedCurrencyUiTest` |
 | `BG-04` | `REQ-FUNC-004..005`, `REQ-FUNC-015`, `REQ-FUNC-018`, `REQ-FUNC-020..021`, `REQ-REL-001..003`, `REQ-OBS-001`, `REQ-BUILD-001`, `REQ-MAINT-001`, `REQ-REUSE-001`, `REQ-DEAD-001`, `REQ-CM-001`, `REQ-ML-002..003` | `SYS-FUNC-001..003`, `006`, `010`, `011`, `014`; `SYS-NFR-004`, `006`, `007`, `008` | `F-01..03`, `F-06`, `F-10`, `F-11`, `F-14` | `DV-02`, `DV-04`, `DV-05`, `DV-07`, `DV-08`, `DV-09`, `DV-10`, `DV-11` | `ADR-0001`, `0002`, `0003`, `0004`, `0005` | `ReceiptArithmetic`, `ReceiptExtraction`, `BankReceiptParser`, `PendingReceiptStore`, `RecognitionQueue`, `GroqErrors`, `DraftCache` | `ReceiptArithmeticTest`, `ReceiptCoreTest`, `ReceiptStoreTest`, `EditorRefinementTest`, `TotalOnlyReceiptTest`, `GroqErrorsTest`, `SteamReceiptReviewTest` |
 | `BG-05` | `REQ-SEC-001..003`, `REQ-COMP-001`, `REQ-DIST-001`, `REQ-COST-001` | `SYS-FUNC-010`, `012`, `013`, `015`; `SYS-NFR-003`, `005`, `010` | `F-06`, `F-10`, `F-12`, `F-13`, `F-15` | `DV-01`, `DV-04`, `DV-05`, `DV-06`, `DV-12` | `ADR-0004`, `0006`, `0007`, `0008` | `AndroidManifest.xml`, `network_security_config.xml`, `ReceiptPhotos`, `SelectionSharing`, `GroqClient`, `BackupCodec`, `THIRD_PARTY.md` | `CardLastFourTest`, `GroqCardLastFourTest`, `EditorCardExtractionTest`, `SettingsRequirementsTest` |
-| `CR-01`, `CR-02` (PR #3) | Изменения Раунда 2 (отказ от перекл. тем; бэкап SAF + шаблоны покупок) | `SYS-FUNC-015`, `SYS-FUNC-016` | `F-15`, `F-16` | `DV-05` (v6), `DV-06` (SAF), `План v3` | `ADR-0008` | `BackupCodec` (`:core`), `ReceiptStore` v6, `SettingsPanel`, `EditorActivity` | Round-trip тесты бэкапа и миграции `v5 → v6` (Итер. 4–5) |
+| `CR-01`, `CR-02` (PR #3) | Изменения Раунда 2 (отказ от перекл. тем; бэкап SAF + шаблоны покупок) | `SYS-FUNC-015`, `SYS-FUNC-016` | `F-15`, `F-16` | `DV-05` (v6), `DV-06` (SAF), `План v3`, `UML 3.5` | `ADR-0008`, `0009` | `BackupSnapshot`, `BackupCodec` (`:core`), `ReceiptStore` v6, `SettingsPanel`, `EditorActivity`, `MainActivity` | `BackupCodecTest`, `BackupRestoreStoreTest`, `TemplateMigrationStoreTest`, `HistoricalRatesStoreTest` |
+
+---
+
+### 3.5 Модель динамического поведения системы (UML 2.5) {#35-uml-dynamic-behavior}
+
+В рамках лабораторной работы № 5 архитектурные представления `DV-07` (Interaction) и `DV-09` (State Dynamics) расширены до полной модели динамического поведения системы Cheq в текстовой нотации PlantUML (`uml/models/*.puml`) с вынесенными артефактами спецификаций:
+
+- **Глоссарий проекта (табличная форма):** [uml/glossary.md](../uml/glossary.md) — 26 предметных и инженерных терминов Cheq.
+- **Дополнительные спецификации:** [uml/supplementary-specifications.md](../uml/supplementary-specifications.md) — сквозные бизнес-правила (`BR-01`–`BR-06`), квоты ресурсов, требования надёжности, безопасности и сопровождаемости.
+- **Спецификации актёров и прецедентов (Flow of Events):** [uml/use-case-specifications.md](../uml/use-case-specifications.md) — краткие описания 5 актёров (1–2 строки) и полные потоки событий (пояснения, предусловия, основной, альтернативные и ошибочные потоки, постусловия) для всех 10 прецедентов (`UC-01`–`UC-10`).
+
+#### 3.5.1 Диаграмма вариантов использования (Use Case Diagram)
+![Диаграмма вариантов использования Cheq](../uml/diagrams/01-use-case.png)
+Исходный файл: [uml/models/01-use-case.puml](../uml/models/01-use-case.puml). Отражает границы системы Cheq, 5 внешних актёров (без связей между актёрами), 7 пользовательских (`UC-01`–`UC-07`) и 3 вспомогательных прецедента (`UC-08`–`UC-10`) со связями коммуникации, `<<include>>` (`UC-08`, `UC-10`) и `<<extend>>` (`UC-09`).
+
+#### 3.5.2 Диаграмма активности (Activity Diagram)
+![Диаграмма активности импорта и учёта чека](../uml/diagrams/02-activity-receipt-import.png)
+Исходный файл: [uml/models/02-activity-receipt-import.puml](../uml/models/02-activity-receipt-import.puml). Моделирует сквозной поток управления между 4 дорожками ответственности (`Пользователь / UI`, `Локальный OCR`, `Очередь и Groq API`, `SQLite (receiptbox.db v6)`), включая параллельный `fork/join` гибридного OCR (ML Kit + Tesseract), ветвления по валидации сети, `CAS revision` и `ReceiptArithmetic`.
+
+#### 3.5.3 Диаграмма состояний (State Machine Diagram)
+![Диаграмма состояний чека Cheq](../uml/diagrams/03-state-machine-receipt.png)
+Исходный файл: [uml/models/03-state-machine-receipt.puml](../uml/models/03-state-machine-receipt.puml). Детализирует полный жизненный цикл чека от импорта до удаления: составное состояние `processing` (`<<choice>>`, `Локальный OCR` → `Облачный разбор Groq`), `waiting` (`revision = 0`), `ready`, `error` (экспоненциальный backoff и `NetworkCallback`), `saved` и `deleted` (с проверкой ссылочной целостности фото `[ссылок == 0]`).
+
+#### 3.5.4 Диаграммы последовательности (Sequence Diagrams)
+![Диаграмма последовательности сквозного импорта чека](../uml/diagrams/04-sequence-receipt-import.png)
+![Диаграмма последовательности мультивалютной аналитики и бюджета НБРБ](../uml/diagrams/05-sequence-budget-nbrb.png)
+![Диаграмма последовательности локального резервного копирования и восстановления SAF](../uml/diagrams/06-sequence-backup-restore.png)
+Исходные файлы: [04-sequence-receipt-import.puml](../uml/models/04-sequence-receipt-import.puml), [05-sequence-budget-nbrb.puml](../uml/models/05-sequence-budget-nbrb.puml) и [06-sequence-backup-restore.puml](../uml/models/06-sequence-backup-restore.puml). Выполняют проекцию сценариев `UC-01`, `UC-04` (`UC-10`) и `UC-07` (`F-15`) на реальные классы Cheq в нотации UML 2.5 (фреймы `sd`, линии жизни, активации, `«create»`/`destroy`, временные ограничения `{<= 120s}`/`{<= 55s}`/`{<= 12s}`, фрагменты `loop`, `par`, `alt`, `opt`, `ref`).
 
 ---
 
 ## 4. Решения (ADR) {#4-decisions}
 
-Значимые архитектурные решения документируются в формате MADR 4.0 в каталоге [adr/](../adr/README.md). Ниже приведён сводный реестр решений версии 0.1:
+Значимые архитектурные решения документируются в формате MADR 4.0 в каталоге [adr/](../adr/README.md). Ниже приведён сводный реестр решений версии 0.2:
 
 | ID | Заголовок | Статус | Краткий итог | Файл |
 |---|---|---|---|---|
@@ -484,6 +516,7 @@ Cheq работает как автономный локальный клиен�
 | `ADR-0006` | Минимизация карточных данных, приватность локального хранилища и TXT-экспорт через `FileProvider` | `accepted` | Только `label` + `last_four`, `allowBackup=false`, запрет HTTP cleartext, экспорт без OCR и карт с TTL 24 ч | [0006-card-data-minimization-and-local-privacy.md](../adr/0006-card-data-minimization-and-local-privacy.md) |
 | `ADR-0007` | Ограничение нативной поставки архитектурой `arm64-v8a` с R8-оптимизацией и CLI-сборкой | `accepted` | Компактный ARM64 APK с встроенными OCR-моделями и воспроизводимой сборкой Gradle/JDK 17 без Android Studio | [0007-arm64-only-distribution-and-r8-packaging.md](../adr/0007-arm64-only-distribution-and-r8-packaging.md) |
 | `ADR-0008` | Интеграция локального бэкапа (`F-15`), шаблонов покупок (`F-16`) и привлечение Junior-разработчика на итерации 4–5 | `accepted` | Сохранение жёсткого дедлайна 10 недель и бюджета $9 550 (+9,8% к v2) за счёт подключения Junior ($10/ч, 1,5×) на изолированные UI-задачи с code review Middle (16 ч) | [0008-local-backup-templates-and-junior-onboarding.md](../adr/0008-local-backup-templates-and-junior-onboarding.md) |
+| `ADR-0009` | Моделирование динамического поведения системы Cheq в текстовой нотации UML (Diagrams-as-Code) и механизмы связей | `accepted` | Выбор PlantUML (`.puml`) + раздельных спецификаций; четырёхуровневая сквозная связь Use Case → Activity → State Machine → Sequence с кодом и SDD v0.4 | [0009-uml-dynamic-behavior-modeling-and-text-as-code.md](../adr/0009-uml-dynamic-behavior-modeling-and-text-as-code.md) |
 
 ---
 
@@ -505,6 +538,11 @@ Cheq работает как автономный локальный клиен�
    - [08-plan-v2-roadmap.png](diagrams/08-plan-v2-roadmap.png) — дорожная карта Плана v2;
    - [09-plan-v3-roadmap.png](diagrams/09-plan-v3-roadmap.png) — дорожная карта согласованного Плана v3 (Middle + Junior);
    - [10-plans-comparison.png](diagrams/10-plans-comparison.png) — сравнение всех версий плана по срокам и стоимости.
-3. **Автоматическое тестовое покрытие кодовой базы Cheq 1.0**:
-   - Модуль `:core` (18 наборов JUnit 4): `BudgetProgressTest`, `CardLastFourTest`, `DigitalReceiptTest`, `GroqConnectionTest`, `GroqErrorsTest`, `GroqReceiptApiTest`, `GroqReviewTest`, `GroqTransferTest`, `HistoricalRateTest`, `MultiReceiptRulesTest`, `NbrbRateClientTest`, `OcrTextMergerTest`, `ReceiptArithmeticTest`, `ReceiptCoreTest`, `ReceiptDiversityTest`, `ReceiptRefinementTest`, `SteamReceiptReviewTest`, `TotalOnlyReceiptTest`.
-   - Модуль `:app` (29 наборов Robolectric 4.16 / AndroidX Test): `GroqCardLastFourTest`, `BatchSelectionStoreTest`, `CardSpendingStoreTest`, `GalleryStoreTest`, `HistoricalRatesStoreTest`, `PreferencesDataTest`, `ReceiptStoreTest`, `TotalOnlyStoreTest`, `OcrPreparationTest`, `BottomPanelTest`, `CardSpendingUiTest`, `ChoiceInteractionTest`, `EditorCardExtractionTest`, `EditorRefinementTest`, `EditorStateTest`, `ExpensesHeaderTest`, `FrostedSurfaceShadowTest`, `FrostedSurfaceTest`, `GalleryPreviewTest`, `GalleryUiTest`, `MixedCurrencyUiTest`, `MultiSelectionTest`, `NativeFlowTest`, `RateRefreshLifecycleTest`, `ReceiptBrowserTest`, `SelectionHeaderGeometryTest`, `SettingsChoiceLifecycleTest`, `SettingsRequirementsTest`, `TotalOnlyUiTest`.
+3. **Модель динамического поведения UML 2.5 (`uml/`)**:
+   - [uml/glossary.md](../uml/glossary.md) — глоссарий проекта в табличной форме;
+   - [uml/supplementary-specifications.md](../uml/supplementary-specifications.md) — дополнительные спецификации и бизнес-правила;
+   - [uml/use-case-specifications.md](../uml/use-case-specifications.md) — описания актёров и потоки событий прецедентов (`UC-01`–`UC-10`);
+   - `uml/models/*.puml` и `uml/diagrams/*.png` — 6 текстовых UML-моделей и их PNG-рендеров (Use Case, Activity, State Machine, 3 Sequence).
+4. **Автоматическое тестовое покрытие кодовой базы Cheq 1.0**:
+   - Модуль `:core` (19 наборов JUnit 4, 149 тестов): `BackupCodecTest`, `BudgetProgressTest`, `CardLastFourTest`, `DigitalReceiptTest`, `GroqConnectionTest`, `GroqErrorsTest`, `GroqReceiptApiTest`, `GroqReviewTest`, `GroqTransferTest`, `HistoricalRateTest`, `MultiReceiptRulesTest`, `NbrbRateClientTest`, `OcrTextMergerTest`, `ReceiptArithmeticTest`, `ReceiptCoreTest`, `ReceiptDiversityTest`, `ReceiptRefinementTest`, `SteamReceiptReviewTest`, `TotalOnlyReceiptTest`.
+   - Модуль `:app` (31 набор Robolectric 4.16 / AndroidX Test): `BackupRestoreStoreTest`, `TemplateMigrationStoreTest`, `GroqCardLastFourTest`, `BatchSelectionStoreTest`, `CardSpendingStoreTest`, `GalleryStoreTest`, `HistoricalRatesStoreTest`, `PreferencesDataTest`, `ReceiptStoreTest`, `TotalOnlyStoreTest`, `OcrPreparationTest`, `BottomPanelTest`, `CardSpendingUiTest`, `ChoiceInteractionTest`, `EditorCardExtractionTest`, `EditorRefinementTest`, `EditorStateTest`, `ExpensesHeaderTest`, `FrostedSurfaceShadowTest`, `FrostedSurfaceTest`, `GalleryPreviewTest`, `GalleryUiTest`, `MixedCurrencyUiTest`, `MultiSelectionTest`, `NativeFlowTest`, `RateRefreshLifecycleTest`, `ReceiptBrowserTest`, `SelectionHeaderGeometryTest`, `SettingsChoiceLifecycleTest`, `SettingsRequirementsTest`, `TotalOnlyUiTest`.

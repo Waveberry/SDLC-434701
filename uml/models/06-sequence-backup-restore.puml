@@ -1,0 +1,72 @@
+@startuml 06-sequence-backup-restore
+skinparam dpi 180
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam actorStyle stick
+skinparam sequenceMessageAlign center
+skinparam maxMessageSize 280
+
+skinparam participant {
+  BackgroundColor #EFF6FF
+  BorderColor #1D4ED8
+  FontColor #0F172A
+}
+
+mainframe sd Локальное резервное копирование и восстановление через SAF (UC-07, F-15)
+
+actor "Владелец\nархива" as User
+participant ":SettingsPanel\n/ MainActivity" as UI
+participant ":Android SAF\n(OS)" as SAF #F0FDFA
+participant ":ReceiptStore\n(SQLite v6)" as Store #ECFDF5
+participant ":BackupCodec\n(:core)" as Codec #FFFBEB
+
+alt Экспорт резервной копии архива (ZIP)
+  User -> UI : 1a. Нажать «Экспорт архива (ZIP)»
+  activate UI
+  UI -> SAF : 2a. ACTION_CREATE_DOCUMENT ("application/zip")
+  activate SAF
+  SAF --> UI : 3a. content:// URI
+  deactivate SAF
+
+  UI -> Store : 4a. exportSnapshot() [read TX: 6 сущностей]
+  activate Store
+  Store --> UI : 5a. BackupSnapshot (schemaVersion=6)
+  deactivate Store
+
+  UI -> Codec : 6a. encodeZip(snapshot, OutputStream)
+  activate Codec
+  Codec -> Codec : 7a. validate(snapshot) + запись cheq-backup.json
+  Codec --> UI : 8a. ZIP-поток записан в SAF URI
+  deactivate Codec
+  UI --> User : 9a. Toast «Резервная копия сохранена»
+  deactivate UI
+
+else Атомарное восстановление из файла
+  User -> UI : 1b. Нажать «Восстановить из файла»
+  activate UI
+  UI -> SAF : 2b. ACTION_OPEN_DOCUMENT (ZIP / JSON)
+  activate SAF
+  SAF --> UI : 3b. content:// URI
+  deactivate SAF
+
+  UI -> Codec : 4b. decodeZip(InputStream) {<= 10 МБ}
+  activate Codec
+  Codec -> Codec : 5b. validate(snapshot) [schemaVersion <= 6]
+  Codec --> UI : 6b. BackupSnapshot или ошибка схемы
+  deactivate Codec
+
+  alt Архив и схема валидны
+    UI -> Store : 7b. restoreAtomic(snapshot) [единая ACID TX]
+    activate Store
+    Store -> Store : 8b. ремаппинг карт, дедупликация чеков и шаблонов
+    Store --> UI : 9b. RestoreResult (added, skipped)
+    deactivate Store
+    UI --> User : 10b. Обновление UI + Toast «Восстановлено...»
+  else Повреждённый JSON/ZIP или schemaVersion > 6
+    UI --> User : 7c. BottomPanel с ошибкой (receiptbox.db не затронута)
+  end
+  deactivate UI
+end
+@enduml

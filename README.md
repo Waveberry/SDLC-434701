@@ -12,13 +12,19 @@
   - [Спецификация требований (SRS v1.2)](srs/srs-cheq.md)
   - [Модели и диаграммы SysML v2](srs/sysml)
   - [Отчёт по лабораторной работе № 3](srs/lab3.docx)
-- `sdd/` — шаблоны SDD (IEEE 1016 / ISO 42010) и материалы **лабораторной работы № 4**:
-  - [Описание дизайна ПО (SDD v0.3)](sdd/sdd-cheq.md)
+- `sdd/` — шаблоны SDD (IEEE 1016 / ISO 42010) и материалы **лабораторных работ № 4–5**:
+  - [Описание дизайна ПО (SDD v0.4)](sdd/sdd-cheq.md)
   - [Первичный план v1](sdd/plan-v1.md) · [Изменённый план v2](sdd/plan-v2.md) · [Согласованный план v3](sdd/plan-v3.md)
   - [Журнал переписки и согласования (PR #3)](sdd/negotiations.md)
   - [Архитектурные и плановые диаграммы](sdd/diagrams)
   - [Отчёт по лабораторной работе № 4](sdd/lab4.docx)
-- `adr/` — шаблоны MADR 4.0 и протоколы архитектурных решений (**лабораторная работа № 4**):
+- `uml/` — модель динамического поведения UML 2.5 и спецификации (**лабораторная работа № 5**):
+  - [Глоссарий проекта (табличная форма)](uml/glossary.md)
+  - [Дополнительные спецификации (`BR-01`–`BR-06`, квоты, надёжность)](uml/supplementary-specifications.md)
+  - [Спецификации актёров и потоки событий прецедентов (`UC-01`–`UC-10`)](uml/use-case-specifications.md)
+  - [Текстовые модели PlantUML (`models/*.puml`)](uml/models) · [Отрендеренные диаграммы (`diagrams/*.png`)](uml/diagrams)
+  - [Отчёт по лабораторной работе № 5](uml/lab5.docx)
+- `adr/` — шаблоны MADR 4.0 и протоколы архитектурных решений (**лабораторные работы № 4–5**):
   - [ADR-0001 — Выделение чистого Java-модуля `:core`](adr/0001-separate-pure-java-core-module.md)
   - [ADR-0002 — Две изолированные SQLite БД с WAL и идемпотентным сохранением](adr/0002-dual-sqlite-databases-with-wal-and-idempotent-save.md)
   - [ADR-0003 — Гибридный локальный OCR (ML Kit + Tesseract + `OcrTextMerger`)](adr/0003-hybrid-on-device-ocr-mlkit-and-tesseract.md)
@@ -27,5 +33,7 @@
   - [ADR-0006 — Минимизация карточных данных, приватность и `FileProvider` TXT](adr/0006-card-data-minimization-and-local-privacy.md)
   - [ADR-0007 — Поставка ARM64 APK (`arm64-v8a`) с R8 и CLI-сборкой](adr/0007-arm64-only-distribution-and-r8-packaging.md)
   - [ADR-0008 — Локальный бэкап SAF (`F-15`), шаблоны (`F-16`) и Junior-разработчик на Итер. 4–5](adr/0008-local-backup-templates-and-junior-onboarding.md)
+  - [ADR-0009 — Моделирование динамического поведения UML 2.5 (PlantUML) и связи между диаграммами](adr/0009-uml-dynamic-behavior-modeling-and-text-as-code.md)
 - `docs/` — справочные материалы курса по стандартам, трассируемости и атрибутам качества
+- Репозиторий приложения Cheq (`F-15`, `F-16` по Плану v3): [Waveberry/Cheq (PR #1)](https://github.com/Waveberry/Cheq/pull/1)
 - Ветка `lab1` — материалы лабораторной работы № 1

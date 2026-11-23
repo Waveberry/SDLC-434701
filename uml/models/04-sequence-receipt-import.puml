@@ -1,0 +1,87 @@
+@startuml 04-sequence-receipt-import
+skinparam dpi 180
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam actorStyle stick
+skinparam sequenceMessageAlign center
+skinparam maxMessageSize 280
+
+skinparam participant {
+  BackgroundColor #EFF6FF
+  BorderColor #1D4ED8
+  FontColor #0F172A
+}
+
+mainframe sd Сквозной импорт чека (UC-01)
+
+actor "Владелец\nархива" as User
+participant ":EditorActivity\n/ EditorModel" as UI
+participant ":RecognitionQueue\n(worker)" as Queue
+participant ":PendingReceipt\nStore" as Pending #FFFBEB
+participant ":OcrEngine" as OCR #F0FDFA
+participant ":TessSession" as Tess #F0FDFA
+participant ":GroqClient\n/ Groq API" as Groq #FEF2F2
+participant ":ReceiptStore\n(receiptbox.db)" as Store #ECFDF5
+
+User -> UI : 1. Снимок / выбор фото (Uri)
+activate UI
+UI -> Queue : 2. addPhoto(uri, currency)
+activate Queue
+Queue -> Pending : 3. add(status='waiting', uri)
+activate Pending
+Pending --> Queue : 4. pendingId, revision=0
+deactivate Pending
+Queue --> UI : 5. LiveData(waiting)
+deactivate UI
+
+Queue -> OCR : 6. recognize(uri) {<= 120s}
+activate OCR
+loop Для каждой полосы (<= 24)
+  par Гибридный локальный OCR
+    OCR -> OCR : 7a. ML Kit Latin {<= 25s/пол.}
+  else
+    OCR -> Tess ** : 7b. <<create>> TessSession(rus+eng)
+    activate Tess
+    Tess --> OCR : 7c. строки + score {watchdog <= 90s}
+    destroy Tess
+  end
+end
+OCR --> Queue : 8. mergedText (OcrTextMerger)
+deactivate OCR
+
+Queue -> Pending : 9. phase('waiting', raw_text) [CAS rev=0]
+activate Pending
+Pending --> Queue : 10. ok
+deactivate Pending
+
+alt Сеть валидирована (NET_CAPABILITY_VALIDATED)
+  Queue -> Groq : 11. HTTPS POST {text, date, currency} {<= 55s}
+  activate Groq
+  Groq --> Queue : 12. strict JSON (purchase_receipt)
+  deactivate Groq
+  Queue -> Queue : 13. reconcile() + verifyCardLastFour()
+  opt CAS revision совпал (revision == 0)
+    Queue -> Pending : 14. phase('ready', draft)
+    activate Pending
+    Pending --> Queue : 15. ok
+    deactivate Pending
+    Queue -->> UI : 16. LiveData notify (ready)
+  end
+else Нет сети / HTTP 401, 403, 429 / таймаут
+  ref over Queue, Groq : Обработка офлайн-очереди и backoff (UC-09)
+end
+deactivate Queue
+
+ref over User, UI : Проверка арифметики и валидности (UC-08)
+
+User -> UI : 17. «Сохранить покупку»
+activate UI
+UI -> Store : 18. savePending(draft, pendingId) [ACID TX]
+activate Store
+Store --> UI : 19. receiptId (completed_pending записан)
+deactivate Store
+UI -> Queue : 20. remove(pendingId, discardPhoto=false)
+deactivate UI
+@enduml

@@ -1,0 +1,73 @@
+@startuml 05-sequence-budget-nbrb
+skinparam dpi 180
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam actorStyle stick
+skinparam sequenceMessageAlign center
+skinparam maxMessageSize 280
+
+skinparam participant {
+  BackgroundColor #EFF6FF
+  BorderColor #1D4ED8
+  FontColor #0F172A
+}
+
+mainframe sd Мультивалютная аналитика и бюджет НБРБ (UC-04)
+
+actor "Владелец\nархива" as User
+participant ":MainActivity\n(Расходы)" as UI
+participant ":ReceiptStore\n(SQLite v6)" as Store #ECFDF5
+participant ":HistoricalRate\nRepository" as RateRepo #FFFBEB
+participant ":NbrbRateClient\n/ API НБРБ" as NBRB #FEF2F2
+participant ":BudgetProgress\n(:core)" as Budget #ECFDF5
+
+User -> UI : 1. Выбор месяца и валюты отчёта
+activate UI
+
+UI -> Store : 2. missingRateRequests(baseCurrency)
+activate Store
+Store --> UI : 3. List<RateRequest>
+deactivate Store
+
+opt Есть отсутствующие в exchange_rates пары (currency, date)
+  UI -> RateRepo : 4. refreshMissingRates(baseCurrency)
+  activate RateRepo
+  loop Для каждой уникальной даты (вне backoff 60 с)
+    RateRepo -> NBRB : 5. HTTPS GET /exrates/rates?ondate=... {<= 12s}
+    activate NBRB
+    alt HTTP 200 и дата совпала
+      NBRB --> RateRepo : 6a. List<HistoricalRate> (scale, officialRate)
+      RateRepo -> Store : 7. saveRate(exchange_rates)
+      activate Store
+      Store --> RateRepo : 8. ok
+      deactivate Store
+    else Нет сети / таймаут 12с / ошибка
+      NBRB --> RateRepo : 6b. IOException (backoff 60 с)
+    end
+    deactivate NBRB
+  end
+  RateRepo --> UI : 9. количество загруженных курсов
+  deactivate RateRepo
+end
+
+UI -> Store : 10. statsConverted(month, baseCurrency) + cardSpending()
+activate Store
+Store -> Store : 11. HistoricalRate.convertMinor() через BYN (HALF_UP)
+Store --> UI : 12. ConvertedStats (total, categories, missingRateCount)
+deactivate Store
+
+UI -> Store : 13. budgetMinor(month, baseCurrency)
+activate Store
+Store --> UI : 14. limitMinor
+deactivate Store
+
+UI -> Budget : 15. BudgetProgress.of(spentMinor, limitMinor)
+activate Budget
+Budget --> UI : 16. percent + Level (NORMAL / NEAR_LIMIT / OVER_LIMIT)
+deactivate Budget
+
+UI --> User : 17. Сводка, разбивка по картам и индикатор бюджета
+deactivate UI
+@enduml

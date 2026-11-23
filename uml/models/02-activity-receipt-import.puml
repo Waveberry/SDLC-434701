@@ -1,0 +1,81 @@
+@startuml 02-activity-receipt-import
+skinparam dpi 150
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam roundcorner 10
+
+skinparam activity {
+  BackgroundColor #EFF6FF
+  BorderColor #1D4ED8
+  FontColor #0F172A
+  DiamondBackgroundColor #FFFBEB
+  DiamondBorderColor #B45309
+  BarColor #1E293B
+  StartColor #0F172A
+  EndColor #0F172A
+}
+
+skinparam swimlane {
+  BorderColor #94A3B8
+  TitleBackgroundColor #E2E8F0
+  TitleFontColor #0F172A
+  TitleFontStyle bold
+}
+
+|Пользователь / UI|
+start
+:Выбрать способ ввода чека;
+if (Источник ввода?) then ([Фото / Галерея])
+  :Захват снимка CameraX\nили выбор фото из галереи;
+  :Передать URI в\nRecognitionQueue.addPhoto();
+
+  |#F0FDFA|Локальный OCR|
+  :Сохранить запись waiting (rev=0)\nи JPEG 90% в pending_receipts.db;
+  :EXIF-поворот и тайлинг\n(OcrPreparation <= 24 полос);
+  fork
+    :ML Kit Latin\n(<= 25 с/пол.);
+  fork again
+    :Tesseract rus+eng\n(watchdog <= 90 с);
+  end fork
+  :OcrTextMerger.merge()\n(<= 24 000 симв.);
+
+  |#FFFBEB|Очередь и Groq API|
+  :Сохранить raw_text (waiting)\n[CAS: WHERE id=? AND revision=?];
+  if (Сеть валидирована?) then ([да])
+    :HTTPS POST Groq API\n(текст, дата, валюта; <= 55 с);
+    if (HTTP 200 + strict JSON?) then ([да])
+      :ReceiptExtraction.reconcile()\n+ verifyCardLastFour();
+      if (CAS revision совпал?) then ([да])
+        :status='ready' и LiveData\nnotify в EditorModel;
+      else ([нет — правка])
+        :resetStale() -> waiting\n(не затирать правки);
+        end
+      endif
+    else ([ошибка 401/403/429/timeout])
+      :status='error', failures++ (<= 6),\nbackoff min(60с, 2с << (f-1));
+      end
+    endif
+  else ([нет сети])
+    :Оставить status='waiting'\n(повтор по NetworkCallback);
+    end
+  endif
+else ([Вручную / Шаблон F-16 / Повтор])
+  |Пользователь / UI|
+  :Открыть пустую форму или\nшаблон / дубль (текущая дата);
+endif
+
+|Пользователь / UI|
+:Проверка в EditorActivity\n(ReceiptDraft + ReceiptArithmetic);
+if (Расхождение > 0,01?) then ([да])
+  :Показать предупреждение\nи запросить подтверждение;
+else ([нет])
+endif
+:Привязка карты (опц.)\nи «Сохранить покупку»;
+
+|#F0FDF4|SQLite (receiptbox.db v6)|
+:ReceiptStore.savePending() / save()\n[ACID TX: receipts + items + completed_pending];
+:Удалить из pending_receipts.db\nи обновить сводку / бюджет;
+stop
+@enduml

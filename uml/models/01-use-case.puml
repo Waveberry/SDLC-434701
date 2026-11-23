@@ -1,0 +1,79 @@
+@startuml 01-use-case
+!pragma layout smetana
+left to right direction
+skinparam dpi 180
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam actorStyle stick
+skinparam packageStyle rectangle
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+skinparam roundcorner 12
+skinparam nodesep 20
+skinparam ranksep 60
+
+skinparam rectangle {
+  BackgroundColor #F8FAFC
+  BorderColor #334155
+  BorderThickness 1.5
+  FontColor #0F172A
+  FontStyle bold
+}
+
+skinparam usecase {
+  BackgroundColor #EFF6FF
+  BorderColor #1D4ED8
+  BorderThickness 1.3
+  FontColor #0F172A
+}
+
+skinparam actor {
+  BackgroundColor #FFFFFF
+  BorderColor #1E293B
+  FontColor #0F172A
+}
+
+actor "Владелец архива\n(Пользователь)" as User
+
+rectangle "Android-приложение Cheq (com.waveberry.cheq)" {
+  usecase "UC-01\nИмпортировать и\nпроверить чек с фото" as UC01
+  usecase "UC-02\nДобавить / править\nпокупку вручную\n(и шаблоны F-16)" as UC02
+  usecase "UC-03\nНайти покупки,\nкаталог товаров\nи историю цен" as UC03
+  usecase "UC-04\nАнализировать расходы\nи контролировать бюджет" as UC04
+  usecase "UC-05\nМассовые операции\nи выборочный TXT-экспорт" as UC05
+  usecase "UC-06\nУправлять справочником\nбанковских карт" as UC06
+  usecase "UC-07\nРезервное копирование\nи восстановление (SAF, F-15)" as UC07
+
+  usecase "UC-08\nПроверить арифметику\nи валидность чека" as UC08 #ECFDF5;line:047857
+  usecase "UC-09\nОбработать офлайн-\nочередь и повторы" as UC09 #FFFBEB;line:B45309
+  usecase "UC-10\nЗагрузить и кэшировать\nисторический курс НБРБ" as UC10 #ECFDF5;line:047857
+}
+
+actor "Groq API\n(openai/gpt-oss-20b)" as Groq
+actor "Системные службы\nAndroid\n(CameraX / SAF / Net)" as AndroidOS
+actor "API НБРБ\n(api.nbrb.by)" as NBRB
+actor "Планировщик\nвремени ОС\n(Время)" as Timer
+
+User --> UC01
+User --> UC02
+User --> UC03
+User --> UC04
+User --> UC05
+User --> UC06
+User --> UC07
+
+UC01 <.. UC09 : <<extend>>
+UC01 ..> UC08 : <<include>>
+UC02 ..> UC08 : <<include>>
+UC04 ..> UC10 : <<include>>
+
+UC01 --> Groq
+UC09 --> Groq
+UC09 <-- Timer
+UC05 <-- Timer
+UC01 --> AndroidOS
+UC09 --> AndroidOS
+UC05 --> AndroidOS
+UC07 --> AndroidOS
+UC10 --> NBRB
+@enduml

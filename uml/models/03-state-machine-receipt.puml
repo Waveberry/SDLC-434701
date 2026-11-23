@@ -1,0 +1,68 @@
+@startuml 03-state-machine-receipt
+!pragma layout smetana
+skinparam dpi 180
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam roundcorner 12
+skinparam nodesep 30
+skinparam ranksep 42
+
+skinparam state {
+  BackgroundColor #EFF6FF
+  BorderColor #1D4ED8
+  FontColor #0F172A
+  StartColor #0F172A
+  EndColor #0F172A
+}
+
+[*] --> waiting : addPhoto() / addText()\n[revision = 0]
+
+state "waiting\n(Ожидание в очереди)" as waiting #FFFBEB;line:B45309
+waiting : entry / сохранить JPEG 90% и input_uri
+waiting : do / ждать drain() или NetworkCallback
+
+state "processing\n(Активная обработка)" as processing #EFF6FF;line:1D4ED8 {
+  state entryChoice <<choice>>
+  [*] --> entryChoice
+  entryChoice --> ocr : [raw_text пуст]
+  entryChoice --> groq : [raw_text есть && сеть ok]
+
+  state "Локальный OCR\n(ML Kit + Tesseract)" as ocr #F0FDFA;line:047857
+  ocr : do / EXIF + тайлинг <= 24 полосы, <= 120 с
+
+  state "Облачный разбор Groq\n(openai/gpt-oss-20b)" as groq #FEF2F2;line:B91C1C
+  groq : do / HTTPS POST strict JSON, <= 55 с
+
+  ocr --> groq : текст готов [сеть валидирована]
+}
+
+state "ready\n(Готов к проверке)" as ready #ECFDF5;line:047857
+ready : entry / reconcile() + verifyCardLastFour()
+ready : do / проверка в EditorActivity (ReceiptArithmetic)
+
+state "error\n(Ошибка обработки)" as error #FEF2F2;line:B91C1C
+error : entry / failures++, retry_after = min(60с, 2с << (f-1))
+error : do / фото и raw_text сохранены
+
+state "saved\n(Сохранён в архиве)" as saved #ECFDF5;line:047857
+saved : entry / ACID TX (receipts + items + completed_pending)
+saved : do / архив, поиск, аналитика и шаблоны F-16
+
+state "deleted\n(Удалён)" as deleted #F1F5F9;line:475569
+deleted : entry / deleteReceipts(), удалить JPEG [ссылок == 0]
+
+waiting --> processing : drain() [воркер свободен && now >= retry_after]
+processing --> waiting : нет сети / recover() /\nresetStale() [CAS mismatch]
+processing --> ready : ответ Groq валиден\n[CAS revision совпал]
+processing --> error : сбой OCR или Groq\n(401/403/429/timeout/JSON)
+error --> waiting : NetworkCallback / backoff истёк\n[failures < 6] / reparse()
+ready --> waiting : edit() [revision++]\n/ reparse()
+ready --> saved : savePending()\n[«Сохранить покупку»]
+waiting --> saved : ручное сохранение\nбез ожидания Groq
+ready --> deleted : discardPhoto()\n[отмена импорта]
+saved --> saved : редактирование /\nsaveTemplate() (F-16)
+saved --> deleted : delete() / deleteReceipts()\n[пакет <= 400 ID]
+deleted --> [*]
+@enduml
